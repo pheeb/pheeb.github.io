@@ -1,0 +1,78 @@
+div.fixed-gnb-bar
+    div.container
+        a.top-brand
+        
+div.keypromo#keyPromo
+
+div.header-utility
+    div.container
+        div.header-utility-account
+            ul
+                li#gnbLogin
+                    a.header-utility-item(href="#") Login
+                li#gnbRegister
+                    a.header-utility-item(href="#") Sign Up
+                li.collapsible
+                    a.collapsible-header.header-utility-item.my-page
+                        span.my-page-text My Page
+                        i.icon.icon-arrow-s
+                    i.header-utility-dropdown-arrow
+                li
+                    a.header-utility-item.my-cart(href="#")
+                        span.my-cart-text Cart 
+                        span#my-cart-count.count.my-cart-count 99
+                li
+                    a.header-utility-item(href="#") Customer Service
+                    
+        div.header-utility-misc
+            ul
+                li.collapsible
+                    p.collapsible-header.header-utility-item.icon-prefix.icon-app Download 11street App
+                li.collapsible
+                    p.collapsible-header.header-utility-item
+                        | Seller Service 
+                        i.icon.icon-arrow-s
+                    i.header-utility-dropdown-arrow
+                    
+div.header-primary
+    div.container
+        div.header-primary-branding
+            a(href="//www.11street.my")
+                span.sr-only.logo Online shopping at 11street Malaysia.
+                img(src="//www.11street.my/img_glb/11street-malaysia-logo.png")
+        
+        div.header-primary-search
+            form#AKCFrm
+                input.header-search-input.primary-search#primary-search(placeholder="Search for products and more")
+                button.header-search-submit.btn(type="button")
+                    i.icon-search
+        
+        div.header-primary-affiliate.carousel-slider-container
+        
+div.header-navigation
+    div.container
+        nav
+            ul
+                li.header-navigation-item.header-navigation-categories.collapsible
+                    div.collapsible-header
+                        i.icon.icon-menu
+                        span All Categories
+                        i.icon.icon-arrow-b
+                    div.collapsible-Content
+                li#star-brands-section.header-navigation-item.header-navigation-brands.collapsible
+                    div.collapsible-header Star Brands
+                        i.icon.icon-arrow-b
+                    div.star-brands-content.collapsible-content.lazyload
+                li.header-navigation-item.header-navigation-shocking-deals
+                    a(href="#") Shocking Deals
+                li.header-navigation-item.header-navigation-hot-selling
+                    a(href="#") Hot Selling
+                li.header-navigation-item.header-navigation-korean-street
+                    a(href="#") Coupon Street
+                li.header-navigation-item.header-navigation-promotions
+                    a(href="#") Promotions
+                li#browsing-history-section.header-navigation-item.header-navigation-history.collapsible
+                    div.collapsible-header Browsing History
+                        span#browsingHistoryCount.count 0
+                        i.icon.icon-arrow-b
+                    div#browsing-history-content.collapsible-content.lazyload

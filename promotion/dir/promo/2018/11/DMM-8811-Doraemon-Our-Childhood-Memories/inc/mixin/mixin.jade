@@ -1,0 +1,22 @@
+// Images
+mixin image(common, dw, mw, classes)
+	if common
+		case device
+			when "desktop"
+				img(src=imgPath + common, class=classes)
+			when "mobile"
+				img(src=imgPath + common, class=classes)
+			when "desktop-bo"
+				img(src=imgPathBo + common, class=classes)
+			when "mobile-bo"
+				img(src=imgPathBo + common, class=classes)
+	else
+		case device
+			when "desktop"
+				img(src=imgPath + dw, class=classes)
+			when "mobile"
+				img(src=imgPath + mw, class=classes)
+			when "desktop-bo"
+				img(src=imgPathBo + dw, class=classes)
+			when "mobile-bo"
+				img(src=imgPathBo + mw, class=classes)

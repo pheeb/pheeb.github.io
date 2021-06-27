@@ -1,0 +1,267 @@
+//Swiper Slider
+.swiperSlider-wrapper {
+    padding: 20px;
+    width: 100%;
+    
+
+    //- <!-- If we need navigation buttons -->
+    .swiper-button {            
+        background-size: auto 100%;
+        outline: 0;
+        width: 56px;
+        height: 56px;
+        margin-top: -28px;
+        background-image: url("@{url}ui/arrow_box_black.png@{version}");
+
+        &.swiper-button-disabled {
+            display: none;
+        }
+
+        &.swiper-button-prev {
+            left: 0;
+            transform: rotate(180deg);
+        }
+
+        &.swiper-button-next {
+            right: 0;
+        }
+    }
+
+
+    .swiper-container {
+        //- <!-- If we need pagination -->
+        // .swiper-pagination {
+            
+        // }
+
+
+
+
+        //- <!-- If we need scrollbar -->
+        // .swiper-scrollbar {
+        //     height: 8px;
+        //     left: 0;
+        //     background: #fff;
+
+        //     .swiper-scrollbar-drag{
+        //         background-color: #f0c900;
+        //     }
+        // }
+
+
+
+
+
+
+        .cm-prod-item {
+            // border-radius: 10px;
+            border: 0;
+
+            a {
+                display: block;
+            }
+
+            .cm-prod-wrapper {
+                .cm-prod-info {
+                    .cm-prod-name {
+                        font-size: 12px;
+                        height: 30.4px;
+                        color: #5f5f5f;
+                    }
+
+                    .cm-prod-meta {
+                        .cm-prod-meta-price {
+                            .cm-prod-discount {
+                                margin-right: 0.6em;
+                                float: left;
+                                margin-top: 0;
+
+                                p {
+                                    line-height: 1;
+                                    font-family: @font-family-roboto !important;
+                                    font-weight: @font_normal_regular;
+
+                                    .cm-prod-discount-special {
+                                        font-size: 15px;
+                                        font-weight: @font_medium;
+                                        color: #e50707;
+                                        display: block;
+                                        text-transform: uppercase;
+                                    }
+
+                                    .cm-prod-discount-special-offer {
+                                        font-size: 18px;
+                                        font-weight: @font_medium;
+                                        color: #e50707;
+                                        display: block;
+                                        text-transform: uppercase;
+                                        padding-bottom: 3px;
+                                    }
+
+                                    .cm-prod-discount-value {
+                                        font-size: 36px;
+                                        font-weight: @font_medium;
+                                        color: #e50707;
+                                    }
+
+                                    .cm-prod-discount-symbol {
+                                        font-size: 23px;
+                                        font-weight: @font_medium;
+                                        color: #e50707;
+                                    }
+                                }
+
+
+                                .cm-prod-discount-off {
+                                    font-size: 23px;
+                                    font-weight: @font_medium;
+                                    color: #e50707;
+                                    display: none;
+                                }
+                            }
+
+
+                            .cm-prod-price {
+                                float: left;
+
+                                p {
+                                    font-family: @font-family-roboto !important;
+                                    font-weight: @font_normal_regular;
+                                    line-height: 1;
+                                    margin-top: 2px;
+                                }
+
+                                .cm-prod-price-old  {
+                                    font-size: 13px;
+                                    min-height: 1em;
+                                    color: #777777;
+                                    text-decoration: line-through;
+                                    font-weight: @font_medium;
+
+                                    .cm-prod-price-currency {
+                                        margin-right: 2px;
+                                    }
+                                }
+
+                                .cm-prod-price-new  {
+                                    color: #000;
+                                    font-size: 16px;
+                                    font-weight: @font_extraBlack_fat_poster_ultraBlack;
+
+                                    .cm-prod-price-currency {
+                                        margin-right: 2px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .cm-prod-badge {
+                // border-bottom-right-radius: 25px;
+                // border-bottom-left-radius: 25px;
+                display: none;
+            }
+        }
+
+        // .cm-sold-out:after {
+        //     border-radius: 10px;
+        // }
+    }
+}
+.cm-desktop {
+    .swiperSlider-wrapper {
+        //- <!-- If we need navigation buttons -->
+        .swiper-button {  
+            opacity: 0.8;
+
+            &.swiper-button-disabled {
+                opacity: 0.3;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+.cm-mobile {
+    .swiperSlider-wrapper {
+        //- <!-- If we need navigation buttons -->
+        .swiper-button {  
+            display: none;
+        }
+
+        .swiper-container {
+            .cm-prod-item {
+                .cm-prod-wrapper {
+                    padding: 0.78125vw;
+
+                    .cm-prod-info {
+                        .cm-prod-name {
+                            font-size: 1.875vw;
+                            height: 4.75vw;
+                        }
+
+                        .cm-prod-meta {
+                            .cm-prod-meta-price {
+                                .cm-prod-discount {
+                                    margin-right: 0.625vw;
+
+                                    p {
+                                        .cm-prod-discount-special {
+                                            font-size: 1.875vw;
+                                        }
+
+                                        .cm-prod-discount-special-offer {
+                                            font-size: 2.5vw;
+                                            padding-bottom: 0.46875vw;
+                                        }
+
+                                        .cm-prod-discount-value {
+                                            font-size: 4.6875vw;
+                                        }
+
+                                        .cm-prod-discount-symbol {
+                                            font-size: 2.8125vw;
+                                        }
+                                    }
+
+
+                                    .cm-prod-discount-off {
+                                        font-size: 3.5937499999999996vw;
+                                    }
+                                }
+
+
+                                .cm-prod-price {
+                                    p {
+                                        margin-top: 0.3125vw;
+                                    }
+
+                                    .cm-prod-price-old  {
+                                        font-size: 1.875vw;
+
+                                        .cm-prod-price-currency {
+                                            margin-right: 0.3125vw;
+                                        }
+                                    }
+
+                                    .cm-prod-price-new  {
+                                        font-size: 2.1875vw;
+
+                                        .cm-prod-price-currency {
+                                            margin-right: 0.3125vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

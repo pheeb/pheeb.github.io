@@ -1,0 +1,209 @@
+
+<!-- Promotion Setting-->
+<!-- Path Configuration-->
+<!-- Version Control-->
+<!-- url-->
+<!-- Images--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>11Street Promotion</title>
+    <link rel="stylesheet" href="//m.prestomall.com/css_glb/common/common.css">
+    <link rel="stylesheet" href="//m.prestomall.com/css_glb/common/corner.css">
+    <script src="//m.prestomall.com/js_glb/common/jquery-2.1.1.min.js"></script>
+    <script src="//m.prestomall.com/js_glb/common/common_ui.js"></script>
+    <script src="//prestomall.com/js/plugins/jquery-slick/1.6.0/slick.js"></script>
+    <script>
+      var coupon = {};
+      
+      coupon.getCouponCount = function(couponId, successFN, errorFN) {
+          console.log('couponId:', couponId);
+          return successFN($('[data-coupon-id=' + couponId + ']').find('.counter').data('value'))
+      }
+      
+      coupon.claimCoupon = function(couponId, successFN, errorFN) {
+          console.log('couponId:', couponId);
+          return successFN('Please check the Coupon Number: ' + couponId);
+      }
+      
+      $( document ).ready(function() {
+          $("#header").load("extend/header/m_header.html");
+          $("#footer").load("extend/footer/m_footer.html");
+      });
+      
+    </script>
+  </head>
+  <body>
+    <div class="non-app" id="wrap">
+      <div id="nonAppHeader">
+        <div id="header"></div>
+      </div>
+      <div id="container">
+        <!-- promotion-->
+        <div class="cm-mobile" id="cm-promotion">
+          <link rel="stylesheet" href="//promotion-assets.11street.my/assets/components/global/1.0.0/css/global.css">
+          <link rel="stylesheet" href="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/css/plugin/slick.css">
+          <link rel="stylesheet" href="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/css/plugin/swiper.min.css">
+          <link rel="stylesheet" href="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/css/style.css">
+          <div class="cm-container" id="main-hd">
+            <div class="cm-row">
+              <div class="fe-main"><img class="cm-full-width" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/main-banner-bg-mw.png"/>
+                <div class="fe-title absolute_section"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/main-banner-title-mw.png"/>
+                </div>
+                <div class="fe-doraemon-members absolute_section"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/doraemon-members-mw.png"/>
+                </div>
+                <div class="fe-clock-right"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/clock-main-banner-mw.png"/>
+                </div>
+                <div class="fe-clock-left"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/clock-main-banner2-mw.png"/>
+                </div>
+              </div>
+              <div class="fe-video-wrapper"><img class="cm-full-width" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/video_bg_mw.png"/>
+                <div class="fe-video-holder">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/f3PAhEVql2U" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="fe-doraemon-01 absolute_section"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/doraemon1-mw.png"/>
+                </div>
+                <div class="fe-doraemon-02"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/doraemon2-mw.png"/>
+                </div>
+              </div>
+              <div class="fe-main"><img class="cm-full-width" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/eyes-mw.gif"/>
+              </div>
+              <div class="fe-main"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/recommend-title-mw.png"/>
+                <div class="fe-bell-01"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/bell-mw.png"/>
+                </div>
+                <div class="fe-bell-02"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/bell2-mw.png"/>
+                </div>
+              </div>
+              <div class="fe-main"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/products_bg_mw.png"/>
+                <div class="fe-products-wrapper">
+                  <ul class="list-style-wrapper">
+                    <li>
+                      <div class="fe-prod-box-holder">
+                        <div class="fe-prod-visual"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/products/1.png"/>
+                        </div>
+                        <div class="fe-prod-title"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/products/desc1.png"/>
+                        </div>
+                      </div>
+                      <div class="fe-btn-wrapper"><a class="link" href="https://www.11street.my/productdetail/doraemon-7-inch-plush-soft-toy-blue-christmas-hat-26460719"><img class="img-fluid normal" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/btn-buy-now-mw.png"/><img class="img-fluid hover" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/"/></a></div>
+                    </li>
+                    <li>
+                      <div class="fe-prod-box-holder">
+                        <div class="fe-prod-visual"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/products/2.png"/>
+                        </div>
+                        <div class="fe-prod-title"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/products/desc2.png"/>
+                        </div>
+                      </div>
+                      <div class="fe-btn-wrapper"><a class="link" href="https://www.11street.my/productdetail/doraemon-7-inch-plush-soft-toy-pink-26720131"><img class="img-fluid normal" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/btn-buy-now-mw.png"/><img class="img-fluid hover" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/"/></a></div>
+                    </li>
+                    <li>
+                      <div class="fe-prod-box-holder">
+                        <div class="fe-prod-visual"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/products/3.png"/>
+                        </div>
+                        <div class="fe-prod-title"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/products/desc3.png"/>
+                        </div>
+                      </div>
+                      <div class="fe-btn-wrapper"><a class="link" href="https://www.11street.my/productdetail/doraemon-7-inch-plush-soft-toy-yellow-26317597"><img class="img-fluid normal" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/btn-buy-now-mw.png"/><img class="img-fluid hover" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/"/></a></div>
+                    </li>
+                    <li>
+                      <div class="fe-prod-box-holder">
+                        <div class="fe-prod-visual"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/products/4.png"/>
+                        </div>
+                        <div class="fe-prod-title"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/products/desc4.png"/>
+                        </div>
+                      </div>
+                      <div class="fe-btn-wrapper"><a class="link" href="https://www.11street.my/productdetail/doraemon-plush-drawstring-bag-26328613"><img class="img-fluid normal" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/btn-buy-now-mw.png"/><img class="img-fluid hover" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/"/></a></div>
+                    </li>
+                    <li>
+                      <div class="fe-prod-box-holder">
+                        <div class="fe-prod-visual"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/products/5.png"/>
+                        </div>
+                        <div class="fe-prod-title"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/products/desc5.png"/>
+                        </div>
+                      </div>
+                      <div class="fe-btn-wrapper"><a class="link" href="https://www.11street.my/productdetail/doraemon-pillow-dorayaki-face-2-in-1-26317578"><img class="img-fluid normal" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/btn-buy-now-mw.png"/><img class="img-fluid hover" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/"/></a></div>
+                    </li>
+                    <li>
+                      <div class="fe-prod-box-holder">
+                        <div class="fe-prod-visual"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/products/6.png"/>
+                        </div>
+                        <div class="fe-prod-title"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/products/desc6.png"/>
+                        </div>
+                      </div>
+                      <div class="fe-btn-wrapper"><a class="link" href="https://www.11street.my/productdetail/doraemon-backpack-small-tongue-dm-02-0004-b-26328620"><img class="img-fluid normal" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/btn-buy-now-mw.png"/><img class="img-fluid hover" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/"/></a></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="fe-main"><img class="cm-full-width" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/doraemon-collections-title-mw.png"/>
+                <div class="fe-biscuit-01"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/biscuit1-mw.png"/>
+                </div>
+                <div class="fe-biscuit-02"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/biscuit2-mw.png"/>
+                </div>
+              </div>
+              <div class="fe-main doraemonCollection-section"><img class="cm-full-width" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/doraemon-collection-bg-mw.png"/>
+                <div class="fe-doraemon-collections-wrapper">
+                  <ul class="list-style-wrapper">
+                    <li>
+                      <div class="fe-logo-holder"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/shocking11-logo-mw.png"/>
+                      </div>
+                      <div class="fe-btn-wrapper"><a class="link js-anchor" href="#10"><img class="img-fluid normal" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/btn-view-more-left-mw.png"/><img class="img-fluid hover" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/"/></a></div>
+                    </li>
+                    <li>
+                      <div class="fe-logo-holder"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/doraemon-merchandise-logo-mw.png"/>
+                      </div>
+                      <div class="fe-btn-wrapper"><a class="link js-anchor" href="#20"><img class="img-fluid normal" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/btn-view-more-mw.png"/><img class="img-fluid hover" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/"/></a></div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="fe-doraemon-03 absolute_section"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/doraemon3-mw.png"/>
+                </div>
+                <div class="fe-doraemon-04"><img class="img-fluid" src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/img/doraemon4-mw.png"/>
+                </div>
+              </div>
+            </div>
+          </div>
+                    <div class="listGallery" id="10">
+                      <h2 class="headingTitle">tab 1</h2><br><br>Display Corner Here<br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odio sit, tempore excepturi quos eum vitae odit voluptatem aliquam rem dolore, optio iusto quas consequatur reprehenderit eveniet nihil veniam accusantium!<br><br>
+                    </div>
+                    <div class="listGallery" id="20">
+                      <h2 class="headingTitle">tab 2</h2><br><br>Display Corner Here<br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odio sit, tempore excepturi quos eum vitae odit voluptatem aliquam rem dolore, optio iusto quas consequatur reprehenderit eveniet nihil veniam accusantium!<br><br>
+                    </div>
+                    <div class="listGallery" id="30">
+                      <h2 class="headingTitle">tab 3</h2><br><br>Display Corner Here<br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odio sit, tempore excepturi quos eum vitae odit voluptatem aliquam rem dolore, optio iusto quas consequatur reprehenderit eveniet nihil veniam accusantium!<br><br>
+                    </div>
+                    <div class="listGallery" id="40">
+                      <h2 class="headingTitle">tab 4</h2><br><br>Display Corner Here<br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odio sit, tempore excepturi quos eum vitae odit voluptatem aliquam rem dolore, optio iusto quas consequatur reprehenderit eveniet nihil veniam accusantium!<br><br>
+                    </div>
+                    <div class="listGallery" id="50">
+                      <h2 class="headingTitle">tab 5</h2><br><br>Display Corner Here<br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odio sit, tempore excepturi quos eum vitae odit voluptatem aliquam rem dolore, optio iusto quas consequatur reprehenderit eveniet nihil veniam accusantium!<br><br>
+                    </div>
+                    <div class="listGallery" id="60">
+                      <h2 class="headingTitle">tab 6</h2><br><br>Display Corner Here<br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odio sit, tempore excepturi quos eum vitae odit voluptatem aliquam rem dolore, optio iusto quas consequatur reprehenderit eveniet nihil veniam accusantium!<br><br>
+                    </div>
+                    <div class="listGallery" id="70">
+                      <h2 class="headingTitle">tab 7</h2><br><br>Display Corner Here<br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odio sit, tempore excepturi quos eum vitae odit voluptatem aliquam rem dolore, optio iusto quas consequatur reprehenderit eveniet nihil veniam accusantium!<br><br>
+                    </div>
+                    <div class="listGallery" id="80">
+                      <h2 class="headingTitle">tab 8</h2><br><br>Display Corner Here<br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odio sit, tempore excepturi quos eum vitae odit voluptatem aliquam rem dolore, optio iusto quas consequatur reprehenderit eveniet nihil veniam accusantium!<br><br>
+                    </div>
+                    <div class="listGallery" id="90">
+                      <h2 class="headingTitle">tab 9</h2><br><br>Display Corner Here<br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odio sit, tempore excepturi quos eum vitae odit voluptatem aliquam rem dolore, optio iusto quas consequatur reprehenderit eveniet nihil veniam accusantium!<br><br>
+                    </div>
+                    <div class="listGallery" id="100">
+                      <h2 class="headingTitle">tab 10</h2><br><br>Display Corner Here<br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum odio sit, tempore excepturi quos eum vitae odit voluptatem aliquam rem dolore, optio iusto quas consequatur reprehenderit eveniet nihil veniam accusantium!<br><br>
+                    </div>
+          <script src="//promotion-assets.11street.my/assets/components/global/1.0.0/js/core-min.js"></script>
+          <script src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/js/plugin/slick.min.js"></script>
+          <script src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/js/plugin/swiper.min.js"></script>
+          <script src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/js/partials/row-equaliser.js"></script>
+          <script src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/js/coupon.js"></script>
+          <script src="/promotion/dir/promo/2018/11/DMM-8811-Doraemon-Our-Childhood-Memories/assets/js/function.js"></script>
+        </div>
+        <!-- end promotion-->
+      </div>
+      <div id="footer"></div>
+    </div>
+  </body>
+</html>

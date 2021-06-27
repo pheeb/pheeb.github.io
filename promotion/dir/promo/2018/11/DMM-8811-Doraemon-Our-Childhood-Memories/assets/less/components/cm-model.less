@@ -1,0 +1,126 @@
+.cm-desktop{
+    .fe-app-wrapper {
+        width: 892px;
+        height: 570px;
+        background-image: url('@{url}desktop-popup.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        display: none;
+        z-index: 1;
+        margin-left: auto;
+        margin-top: 123%;
+        &.scaleIn {
+            animation: scaleIn 1s;
+            transform-origin: 100% 100%;
+            opacity: 1;
+        }
+
+        &.scaleOut {
+            animation: scaleOut 1s;
+            transform-origin: 100% 100%;
+        }
+
+        .fe-app-background {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            content: '';
+            display: block;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+        }
+
+        .fe-app-caption {
+            position: relative;
+            padding: 6% 11%;
+        }
+
+        .fe-close-button {
+            position: absolute;
+            top: 1%;
+            right: 6%;
+            color: #ac3861;
+            padding: 10px 15px;
+            border-radius: 25px;
+            .roboto(900, 26px);
+            cursor: pointer;
+        }
+    }
+}
+
+.cm-mobile{
+    .fe-app-wrapper {
+        width: calc(610% / 640 * 100);
+        height: 0;
+        padding-top: calc(676% / 640 * 100);
+        background-image: url('@{url}mobile-popup.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        display: none;
+        z-index: 1;
+        margin-top: 30%;
+        &.scaleIn {
+            animation: scaleIn 1s;
+            transform-origin: 100% 100%;
+            opacity: 1;
+        }
+
+        &.scaleOut {
+            animation: scaleOut 1s;
+            transform-origin: 100% 100%;
+        }
+
+        .fe-app-background {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            content: '';
+            display: block;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+        }
+
+        .fe-app-caption {
+            position: absolute;
+            width: calc(514% / 610 * 100);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            margin-top: 10%;
+            margin-bottom: 14%;
+            img{
+                width: 100%;
+            }
+        }
+
+        .fe-close-button {
+            position: absolute;
+            top: 1%;
+            right: 6%;
+            color: #ac3861;
+            padding: 1% 1.5%;
+            border-radius: 25px;
+            .roboto(900, 4.5vw);
+            cursor: pointer;
+        }
+    }
+}

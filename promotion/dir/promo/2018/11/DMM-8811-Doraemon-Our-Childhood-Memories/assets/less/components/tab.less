@@ -1,0 +1,83 @@
+//Tab
+.fe-tab-toggle {
+    ul.list-style-wrapper { 
+        display: flex;
+        flex-wrap: wrap;
+
+        li.fe-tab-link {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            background: #b0b0b0;
+            color: #545454;
+            font-family: @font-family-roboto !important;
+            font-weight: @font_bold;
+            font-size: 22px;
+            text-align: center;
+            padding: 20px 10px;
+            cursor: pointer;
+
+            &.active {
+                background: #3d1fa3;
+                pointer-events: none;
+                color: #ffe161;
+                font-size: 25px;
+            }
+        }
+    }
+
+
+    .tab-content {
+        position: relative;
+
+        .tab-pane {
+            display: block;
+            visibility: hidden;
+
+            &:not(:first-child) {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+
+            &.active {
+                visibility: visible;
+            }
+        }
+    }
+}
+.cm-desktop {
+    .fe-tab-toggle {
+        ul.list-style-wrapper { 
+            li.fe-tab-link {
+                flex: 0 0 50%;
+                max-width: 50%;
+
+                &:hover {
+                    background: #3d1fa3;
+                    color: #ffe161;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+.cm-mobile {
+    .fe-tab-toggle {
+        ul.list-style-wrapper { 
+            li.fe-tab-link {
+                font-size: 3.4375vw;
+                padding: 2.34375vw 1.5625vw;
+                flex: 0 0 50%;
+                max-width: 50%;
+
+                &.active {
+                    font-size: 3.90625vw;
+                }
+            }
+        }
+    }
+}
+

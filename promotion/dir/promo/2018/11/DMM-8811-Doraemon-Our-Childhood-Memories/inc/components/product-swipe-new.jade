@@ -1,0 +1,68 @@
+mixin product(img, name, discount, rrp, price, classes)
+    .swiper-slide
+        li.cm-prod-item(class=classes)
+            a(href="#")
+                div.cm-prod-wrapper
+                    div.cm-prod-image
+                        img.swiper-lazy(data-src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/" + img, src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png")
+                    div.cm-prod-info
+                        h3.cm-prod-name #{name}
+
+                        if discount == "Special Price"
+                            .cm-prod-meta
+                               .cm-prod-meta-price.clearfix
+                                   .cm-prod-discount
+                                        p 
+                                            span.cm-prod-discount-special Special
+                                            span.cm-prod-discount-special-offer Offer
+                                     
+
+                                   .cm-prod-price
+                                        p.cm-prod-price-old 
+                                            span.cm-prod-price-currency RM
+                                            | #{rrp}
+                                         
+                                        p.cm-prod-price-new 
+                                            span.cm-prod-price-currency RM
+                                            | #{price}
+                                
+                        else
+                            .cm-prod-meta
+                               .cm-prod-meta-price.clearfix 
+                                   .cm-prod-discount
+                                        p
+                                            span.cm-prod-discount-value #{discount}
+                                            span.cm-prod-discount-symbol %
+                                        
+                                        span.cm-prod-discount-off OFF
+                                     
+
+                                   .cm-prod-price
+                                        p.cm-prod-price-old 
+                                            span.cm-prod-price-currency RM
+                                            | #{rrp}
+                                         
+                                        p.cm-prod-price-new 
+                                            span.cm-prod-price-currency RM
+                                            | #{price}
+
+
+                div.cm-prod-badge
+                    div.cm-badge-shipping
+                    div.cm-badge-lowest
+                    div.cm-badge-official
+
+
+                    
++product("prod1.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "70", "499.00", "200.00", "")
++product("prod2.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "3", "1,499.00", "1,200.00", "cm-sold-out")
++product("prod3.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "Special Price", "22,499.00", "200.00", "")
++product("prod4.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "10", "15,99.00", "99,20.00", "")
++product("prod5.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "70", "499.00", "200.00", "")
++product("prod6.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "Special Price", "499.00", "200.00", "")
++product("prod1.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "7", "499.00", "200.00", "")
++product("prod2.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "70", "12,49.00", "21,20.00", "cm-sold-out")
++product("prod3.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "Special Price", "499.00", "200.00", "")
++product("prod4.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "70", "499.00", "9990.00", "")
++product("prod5.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "70", "499.00", "200.00", "")
++product("prod6.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "Special Price", "499.00", "200.00", "")

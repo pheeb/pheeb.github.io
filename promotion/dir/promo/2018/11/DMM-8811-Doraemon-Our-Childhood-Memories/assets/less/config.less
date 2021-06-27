@@ -1,0 +1,50 @@
+// configuration
+@promotion : "DMM-8811-Doraemon-Our-Childhood-Memories";
+@year : "2018";
+@month : "11";
+
+
+
+
+
+// path
+.config (@path) when (@path = "ftp") {
+    @url : "//image.11st.my/g3/md_img/promo/@{year}/@{month}/@{promotion}/assets/img/";
+    @fontPath: "//image.11st.my/g3/md_img/promo/@{year}/@{month}/@{promotion}/assets/fonts/";
+}
+.config (@path) when (default()) {
+    @url : "/promotion/dir/promo/@{year}/@{month}/@{promotion}/assets/img/";
+    @fontPath: "/promotion/dir/promo/@{year}/@{month}/@{promotion}/assets/fonts/";
+}
+.config("default");
+
+
+
+
+
+
+// viewport width
+// .viewportWidth (@viewport) when (@viewport = "980") {}
+// .viewportWidth (@viewport) when (default()) {
+//     & when(@device = "desktop") {
+
+//         #container {
+//             width: 1180px;
+
+//             &.sec_corner {
+//                 #contents {
+//                     width: 1180px;
+//                     margin: 0 auto;
+//                 }
+//             }
+
+//             .title_temp.specialTitle1 {
+//                 .specialTitleBg {
+//                     width: 100%;
+//                 }
+//             }
+//         }
+        
+//     }
+// } 
+// .viewportWidth("default");

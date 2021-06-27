@@ -1,0 +1,9 @@
+mixin tab(tablist,tabname)
+	div.tab-title(id= tablist)
+		| #{tabname}
+		a.prodTop(href="#main-hd")
+			| Back To Top
+			i.fa.fa-angle-up(aria-hidden="true")
+
++tab("10", "Shocking 11")
++tab("20", "Doraemon Merchandise")

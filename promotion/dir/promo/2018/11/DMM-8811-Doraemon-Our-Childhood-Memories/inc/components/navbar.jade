@@ -1,0 +1,128 @@
+mixin tabs(url, title, classes)
+	li.fe-tab-item.height_same(class=classes)
+		div.valigner
+			a.js-anchor.valigner_col(href="#" + url) #{title}
+
+
+div.cm-container
+	div.cm-row
+		div.fe-navbar.js-fe-navbar
+			div.fe-tabs
+				//- //Default Navbar -- Desktop & Mobile --- START
+				if(device == "mobile" || device == "mobile-bo")
+					div.fe-accordion-head.dropdown-toggle
+						h4.fe-tab-title Categories
+							i.fe-icon
+				ul(class=(device == "desktop" || device == "desktop-bo") ? "list-style-wrapper" : "list-style-wrapper dropdown")
+					+tabs("10", "MOBILE, IT, & CAMERA", "active")
+					+tabs("20", "HOME ELECTRONICS", "")
+					+tabs("30", "E-VOUCHER", "")
+					+tabs("40", "WOMEN’S FASHION", "")
+					+tabs("50", "MEN’S FASHION", "")
+					+tabs("60", "HEALTH & BEAUTY", "")
+					+tabs("70", "BABY, KIDS, & TOYS", "")
+					+tabs("80", "HOME & LIVING", "")
+					+tabs("90", "GROCERIES", "")
+					+tabs("100", "Sports & Automotive", "")
+				//- //Default Navbar -- Desktop & Mobile --- END
+
+
+				
+
+
+
+
+				//- //Dropdown Navbar Two -- Mobile --- START
+				if(device == "mobile" || device == "mobile-bo")
+					div.fe-accordion-head.dropdown-toggle.fe-accordion-head-1
+						h4.fe-tab-title Groceries
+							i.fe-icon
+
+					ul(class=(device == "desktop" || device == "desktop-bo") ? "list-style-wrapper" : "list-style-wrapper list-style-wrapper-1 dropdown")
+						+tabs("10", "Food", "active")
+						+tabs("20", "Beverage", "")
+						+tabs("30", "Household", "")
+
+				if(device == "mobile" || device == "mobile-bo")
+					div.fe-accordion-head.dropdown-toggle.fe-accordion-head-2
+						h4.fe-tab-title Baby, Kids, &amp; Toys
+							i.fe-icon
+
+					ul(class=(device == "desktop" || device == "desktop-bo") ? "list-style-wrapper" : "list-style-wrapper list-style-wrapper-2 dropdown")
+						+tabs("40", "Baby", "")
+						+tabs("50", "Kids", "")
+						+tabs("60", "Toys", "")
+				//- //Dropdown Navbar Two -- Mobile --- END
+
+
+
+
+
+
+
+				//- //Dropdown Navbar Tab Toggle -- Desktop --- START
+				if(device == "desktop" || device == "desktop-bo")
+					div.fe-tab-toggle.js-fe-tab-special
+						ul.list-style-wrapper
+							li.fe-tab-link-toggle(data-feTab="tab-3") Groceries
+
+							li.fe-tab-link-toggle(data-feTab="tab-4") Baby, Kids, &amp; Toys
+						
+
+						.tab-content
+							.tab-pane#tab-3
+								//- div.fe-tabs
+								ul(class=(device == "desktop" || device == "desktop-bo") ? "list-style-wrapper" : "list-style-wrapper dropdown")
+									+tabs("10", "Food", "active")
+									+tabs("20", "Beverage", "")
+									+tabs("30", "Household", "")
+
+
+
+							.tab-pane#tab-4
+								//- div.fe-tabs
+								ul(class=(device == "desktop" || device == "desktop-bo") ? "list-style-wrapper" : "list-style-wrapper dropdown")
+									+tabs("40", "Baby", "")
+									+tabs("50", "Kids", "")
+									+tabs("60", "Toys", "")
+				//- //Dropdown Navbar Tab Toggle -- Desktop --- END
+
+
+
+
+
+
+
+
+
+
+				//- //Default Navbar -- Desktop & Mobile --- START
+				if(device == "desktop" || device == "desktop-bo")
+					ul.list-style-wrapper
+						+tabs("10", "MOBILE, IT, & CAMERA", "active")
+						+tabs("20", "HOME ELECTRONICS", "")
+						+tabs("30", "E-VOUCHER", "")
+						+tabs("40", "WOMEN’S FASHION", "")
+						+tabs("50", "MEN’S FASHION", "")
+						+tabs("60", "HEALTH & BEAUTY", "")
+						+tabs("70", "BABY, KIDS, & TOYS", "")
+						+tabs("80", "HOME & LIVING", "")
+						+tabs("90", "GROCERIES", "")
+						+tabs("100", "Sports & Automotive", "")
+				//- //Default Navbar -- Desktop & Mobile --- END
+				//- //Navbar Slider -- Mobile --- START
+				if(device == "mobile" || device == "mobile-bo")
+					.fe-slider
+						.navBar-section(data-row-equaliser=".height_same")
+							div.slick
+								+tabs("10", "MOBILE, IT & CAMERA", "active")
+								+tabs("20", "HOME ELECTRONICS", "")
+								+tabs("30", "HOME & LIVING", "")
+								+tabs("40", "BABY, KIDS & TOYS", "")
+								+tabs("50", "GROCERIES", "")
+								+tabs("60", "HEALTH & BEAUTY", "")
+								+tabs("70", "WOMEN’S FASHION", "")
+								+tabs("80", "MEN’S FASHION", "")
+								+tabs("90", "Sports & Automotive", "")
+								+tabs("100", "E-VOUCHER", "")
+				//- //Navbar Slider -- Mobile --- END

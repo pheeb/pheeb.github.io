@@ -1,0 +1,90 @@
+.fe-coupon {
+	background-size : 100% 100%;
+	display: table;
+	font-family: @font-family-roboto !important;
+	width: 340px;
+	height: 156px;
+
+	&.bonus, &.shopping {
+		background-image : url('@{url}coupon/coupon-bonus.png@{version}');
+	}
+
+	&.store {
+		background-image : url('@{url}coupon/coupon-store.png@{version}');
+	}
+
+	&.shipping {
+		background-image : url('@{url}coupon/coupon-shipping.png@{version}');
+	}
+
+	.cm-cp-container {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.cm-cp-title {
+	    color: #616161;
+	    font-weight: 400;
+	    line-height: 1;
+	    font-size: 22px;
+	    margin-top: 5px;
+	}
+
+	.cm-cp-value {
+	    color: #000;
+	    display: inline-block;
+	    font-size: 72px;
+	    font-weight: 600;
+	    line-height: 1;
+	    margin: 1px 0 10px;
+
+	    .cp-rm {
+	    	vertical-align: middle;
+		    padding-right: 5px;
+		    position: relative;
+		    top: -8px;
+		    font-size: 45px;
+		    text-transform: uppercase;
+	    }
+	}
+
+	.cm-cp-sub {
+	    font-size: 16px;
+	    color: #999999;
+	    line-height: 1;
+	    letter-spacing: 0.5px;
+	}
+}
+
+
+
+
+.cm-mobile {
+	.fe-coupon {
+	    width: 60%;
+    	height: 30vw;
+
+		.cm-cp-container {
+			text-align: center;
+		    text-transform: none;
+		}
+
+		.cm-cp-title {
+		    font-size: 4vw;
+		    margin-top: 1%;
+		}
+
+		.cm-cp-value {
+		    font-size: 13vw;
+		    margin: 1% 0 4%;
+
+		    .cp-rm {
+	    	    font-size: 8vw;
+		    }
+		}
+
+		.cm-cp-sub {
+		    font-size: 3vw;
+		}
+	}
+}
