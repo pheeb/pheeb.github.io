@@ -1,0 +1,143 @@
+// app Download
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, -10px, 0); }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.fe-app-section {
+    position: absolute;
+    right: 42px;
+    bottom: -48px;
+
+    img {
+        cursor: pointer;
+        // animation: bounce 0.5s;
+        // animation-direction: alternate;
+        // animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+        // animation-iteration-count: infinite;
+    }
+
+    .fe-app-wrapper {
+        height: 180px;
+        width: 385px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        display: none;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.95);
+        z-index: 9;
+
+        &.scaleIn {
+            animation: scaleIn 1s;
+            transform-origin: 100% 100%;
+            opacity: 1;
+        }
+
+        &.scaleOut {
+            animation: scaleOut 1s;
+            transform-origin: 100% 100%;
+        }
+
+        .fe-app-background {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            content: '';
+            display: block;
+            top: 0;
+            left: 0;
+            background-image: url('@{url}app/blurry.jpg@{version}');
+            opacity: 0.3;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+        }
+
+        .fe-app-caption, .fe-input-wrapper {
+            position: relative;
+        }
+
+        h3 {
+            color: #feffd1;
+            .roboto(500, 22px);
+            text-align: center;
+            margin: 25px 0 15px;
+        }
+
+        p {
+            color: #fff;
+            .roboto(400, 14px);
+            line-height: normal;
+            text-align: center;
+        }
+
+        .fe-close-button {
+            position: absolute;
+            top: -10px;
+            right: -8px;
+            color: #000;
+            background: #fff;
+            padding: 10px 15px;
+            border-radius: 25px;
+            .roboto(900, 15px);
+            cursor: pointer;
+        }
+
+        .fe-input-wrapper {
+            margin-top: 15px;
+
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            input {
+                padding: 10px 15px;
+                border-radius: 25px;
+                .roboto(400, 14px);
+                outline: none;
+
+                &::placeholder {
+                    color: #999999;
+                }
+            }
+
+            button {
+                background: #ef2344;
+                .roboto(500, 14px);
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 10px;
+                margin-left: 20px;
+
+                &:hover {
+                    background: #c51e39;
+                }
+            }
+        }
+    }
+
+}

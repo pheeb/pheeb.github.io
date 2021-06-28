@@ -1,0 +1,64 @@
+// Images
+mixin image(common, dw, mw, classes)
+    if common
+        case device
+            when "desktop"
+                img(src=imgPath + common, class=classes)
+            when "mobile"
+                img(src=imgPath + common, class=classes)
+            when "desktop-bo"
+                img(src=imgPathBo + common, class=classes)
+            when "mobile-bo"
+                img(src=imgPathBo + common, class=classes)
+    else
+        case device
+            when "desktop"
+                img(src=imgPath + dw, class=classes)
+            when "mobile"
+                img(src=imgPath + mw, class=classes)
+            when "desktop-bo"
+                img(src=imgPathBo + dw, class=classes)
+            when "mobile-bo"
+                img(src=imgPathBo + mw, class=classes)
+
+// Products            
+mixin product(img, name, discount, rrp, price, classes, type)
+    li.cm-prod-item(class=classes)
+        a(href="#")
+            div.cm-prod-wrapper
+                div.cm-prod-image.cm-lazyLoading
+                    if type == "carousel"
+                        img(data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/" + img, src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png")
+                    else
+                        img(src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/" + img)
+                div.cm-prod-info
+                    h3.cm-prod-name #{name}
+                    div.cm-prod-price
+                        p.cm-selling-price RM #{price}
+                    if discount == "Special Price"
+                        div.cm-prod-discount
+                            span #{discount}
+                    else
+                        div.cm-prod-discount 
+                            | #{discount}
+                            span % OFF
+            div.cm-prod-badge
+                div.cm-badge-shipping
+                div.cm-badge-lowest
+                div.cm-badge-official
+
+// Coupon Download
+mixin couponDownload(number, value, target, text, image)
+    if value
+        a(href="javascript:cmCoupon('" + value + "', '" + number + "');")
+            if image
+                img(src=imgPath + image)
+            else
+                | #{text}
+    else
+        p(data-toggle="elevenstmy-counter", data-target=target, data-coupon-id=number)
+        a(id=target, href="#")
+            if image
+                img(src=imgPath + image)
+            else
+                | #{text}

@@ -1,0 +1,17 @@
+// configuration
+@promotion : "PRMM-6259-Amazing-1111";
+@year : "2018";
+@month : "11";
+
+
+
+// path
+.config (@path) when (@path = "aws") {
+    @url : "//promotion-assets.11street.my/assets/@{year}/@{month}/@{promotion}/assets/img/";
+    @fontPath: "//promotion-assets.11street.my/assets/@{year}/@{month}/@{promotion}/assets/fonts/";
+}
+.config (@path) when (default()) {
+    @url : "/promotion/dir/promo/@{year}/@{month}/@{promotion}/assets/img/";
+    @fontPath: "/promotion/dir/promo/@{year}/@{month}/@{promotion}/assets/fonts/";
+}
+.config("default");

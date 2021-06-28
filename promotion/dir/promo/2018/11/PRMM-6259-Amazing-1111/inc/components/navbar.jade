@@ -1,0 +1,126 @@
+mixin tabs(url, title, classes)
+	li.fe-tab-item.height_same(class=classes)
+		div.valigner
+			a.js-anchor.valigner_col(href="#" + url) #{title}
+
+
+div.cm-container
+	div.cm-row
+		div.fe-navbar.js-fe-navbar
+			div.fe-tabs
+				//- //Default Navbar -- Desktop & Mobile --- START
+				//- if(device == "mobile" || device == "mobile-bo")
+				//- 	div.fe-accordion-head.dropdown-toggle
+				//- 		h4.fe-tab-title Categories
+				//- 			i.fe-icon
+				//- ul(class=(device == "desktop" || device == "desktop-bo") ? "list-style-wrapper" : "list-style-wrapper dropdown")
+				//- 	+tabs("1", "Top Picks", "active")
+				//- 	+tabs("2", "Fashion", "")
+				//- 	+tabs("3", "Health & Beauty", "")
+				//- 	+tabs("4", "Home & Living", "")
+				//- 	+tabs("5", "Electronics", "")
+				//- 	+tabs("6", "Kids & Baby", "")
+				//- 	+tabs("7", "Sports & Automotive", "")
+					
+				//- //Default Navbar -- Desktop & Mobile --- END
+
+
+				
+
+
+
+
+				//- //Dropdown Navbar Two -- Mobile --- START
+				//- if(device == "mobile" || device == "mobile-bo")
+				//- 	div.fe-accordion-head.dropdown-toggle.fe-accordion-head-1
+				//- 		h4.fe-tab-title Groceries
+				//- 			i.fe-icon
+
+				//- 	ul(class=(device == "desktop" || device == "desktop-bo") ? "list-style-wrapper" : "list-style-wrapper list-style-wrapper-1 dropdown")
+				//- 		+tabs("1", "Food", "active")
+				//- 		+tabs("2", "Beverage", "")
+				//- 		+tabs("3", "Household", "")
+
+				//- if(device == "mobile" || device == "mobile-bo")
+				//- 	div.fe-accordion-head.dropdown-toggle.fe-accordion-head-2
+				//- 		h4.fe-tab-title Baby, Kids, &amp; Toys
+				//- 			i.fe-icon
+
+				//- 	ul(class=(device == "desktop" || device == "desktop-bo") ? "list-style-wrapper" : "list-style-wrapper list-style-wrapper-2 dropdown")
+				//- 		+tabs("4", "Baby", "")
+				//- 		+tabs("5", "Kids", "")
+				//- 		+tabs("6", "Toys", "")
+				//- //Dropdown Navbar Two -- Mobile --- END
+
+
+
+
+
+
+
+
+
+				//- //Dropdown Navbar Tab Toggle -- Desktop --- START
+				//- if(device == "desktop" || device == "desktop-bo")
+				//- 	div.fe-tab-toggle.js-fe-tab-special
+				//- 		ul.list-style-wrapper
+				//- 			li.fe-tab-link-toggle(data-feTab="tab-3") Groceries
+
+				//- 			li.fe-tab-link-toggle(data-feTab="tab-4") Baby, Kids, &amp; Toys
+						
+
+				//- 		.tab-content
+				//- 			.tab-pane#tab-3
+				//- 				//- div.fe-tabs
+				//- 				ul(class=(device == "desktop" || device == "desktop-bo") ? "list-style-wrapper" : "list-style-wrapper dropdown")
+				//- 					+tabs("1", "Food", "active")
+				//- 					+tabs("2", "Beverage", "")
+				//- 					+tabs("3", "Household", "")
+
+
+
+				//- 			.tab-pane#tab-4
+				//- 				//- div.fe-tabs
+				//- 				ul(class=(device == "desktop" || device == "desktop-bo") ? "list-style-wrapper" : "list-style-wrapper dropdown")
+				//- 					+tabs("4", "Baby", "")
+				//- 					+tabs("5", "Kids", "")
+				//- 					+tabs("6", "Toys", "")
+				//- //Dropdown Navbar Tab Toggle -- Desktop --- END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				//Default Navbar -- Desktop --- START
+				if(device == "desktop" || device == "desktop-bo")
+					ul.list-style-wrapper
+						+tabs("1", "Top Picks", "active")
+						+tabs("2", "Fashion", "")
+						+tabs("3", "Health & Beauty", "")
+						+tabs("4", "Home & Living", "")
+						+tabs("5", "Electronics", "")
+						+tabs("6", "Kids & Baby", "")
+						+tabs("7", "Sports & Automotive", "")
+				//- //Default Navbar -- Desktop --- END
+				//- //Navbar Slider -- Mobile --- START
+				if(device == "mobile" || device == "mobile-bo")
+					.fe-slider
+						.navBar-section(data-row-equaliser=".height_same")
+							div.slick.slick-default.slick-custom(data-items=(device == "desktop" || device == "desktop-bo") ? "4" : "3.5" , data-scroll=(device == "desktop" || device == "desktop-bo") ? "4" : "2", data-spacing="10")
+								+tabs("1", "Top Picks", "active")
+								+tabs("2", "Fashion", "")
+								+tabs("3", "Health & Beauty", "")
+								+tabs("4", "Home & Living", "")
+								+tabs("5", "Electronics", "")
+								+tabs("6", "Kids & Baby", "")
+								+tabs("7", "Sports & Automotive", "")
+				//Navbar Slider -- Mobile --- END

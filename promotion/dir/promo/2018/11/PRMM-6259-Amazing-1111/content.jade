@@ -1,0 +1,64 @@
+.cm-container
+	.cm-row
+		.fe-main
+			+image('', 'main-banner-pc.gif', 'main-banner-mw.gif', 'cm-full-width')
+	.cm-row
+		.fe-content-bg-wrapper
+			+image('', 'main-content-bg.png', 'timer-bg-mw.png', 'cm-full-width')
+
+			#clock.fe-countdown-timer.absolute_section
+				.clock.hour 00
+				.clock.divider :
+				.clock.minute 00
+				.clock.divider :
+				.clock.second 00
+			
+			.fe-slider
+				.products-section
+					if(device == "desktop" || device == "desktop-bo")
+						div.slick
+							include inc/components/product-swipe.jade
+					if(device == "mobile" || device == "mobile-bo")
+						div.slick.slick-default.slick-custom(data-items=(device == "desktop" || device == "desktop-bo") ? "5" : "3.5" , data-scroll=(device == "desktop" || device == "desktop-bo") ? "5" : "3", data-spacing="10", data-rows=(device == "desktop") ? "2" : "2")
+							include inc/components/product-swipe.jade
+	
+
+
+	.cm-row
+		.fe-main.banner1-section
+			.swiperSlider-wrapper.swiperSlider-banners-wrapper
+				.swiper-container.js-swiper-banners-1-swiper-container
+					.swiper-wrapper
+						.swiper-slide
+							a.link(href="#")
+								+image('banner/img1.png', '', '', 'img-fluid')
+
+						.swiper-slide
+							a.link(href="#")
+								+image('banner/img2.png', '', '', 'img-fluid')
+
+						.swiper-slide
+							a.link(href="#")
+								+image('banner/img3.png', '', '', 'img-fluid')
+
+						.swiper-slide
+							a.link(href="#")
+								+image('banner/img1.png', '', '', 'img-fluid')
+
+
+					//- <!-- If we need navigation buttons -->
+					.swiper-button.swiper-buttonBox.swiper-button-prev.swiper-button-prev-outter-4
+					.swiper-button.swiper-buttonBox.swiper-button-next.swiper-button-next-outter-4
+
+
+
+	.cm-row
+		.fe-title
+			+image('', 'title-pc.png', 'title-mw.png', 'cm-full-width')
+
+
+include inc/components/navbar.jade
+					
+
+
+		

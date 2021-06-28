@@ -1,0 +1,66 @@
+// Fb Share
+.fe-share-section {
+    padding: 0.5% 0 1%;
+
+    .fe-share-caption {
+        .roboto(400, 14px);
+        text-transform: uppercase;
+        color: #888888;
+        margin-right: 15px;
+        letter-spacing: 1.5px;
+    }
+
+    .fe-share-wrapper {
+        display: flex;
+        align-items: center;
+        width: 36%;
+        margin: 0 auto;
+    }
+
+    .fe-share-button {
+        cursor: pointer;
+        
+        img:hover {
+            filter: brightness(110%);
+        }
+    }
+}
+//Desktop
+.cm-desktop {
+    .fe-share-section {
+        .fe-share-button {
+            img:hover {
+                filter: brightness(110%);
+            }
+        }
+    }
+}
+//Mobile
+.cm-mobile {
+    .fe-share-section {
+        background: #721995;
+        border-bottom: 1px solid #9a5bb3;
+        padding: 3%;
+
+        .fe-share-caption {
+            color: #ffffff;
+        }
+
+        .fe-share-wrapper {
+            width: 75%;
+            margin: 0 auto;
+
+            @media (max-width: 596px) {
+                width: 80%;
+            }
+
+            @media (max-width: 520px) {
+                width: 90%;
+            }
+
+            @media (max-width: 485px) {
+                width: 100%;
+            }
+        }
+    }
+}

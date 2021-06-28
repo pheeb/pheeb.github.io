@@ -1,0 +1,155 @@
+//Slick Slider
+.fe-slider {
+    .products-section {
+        background: #f0c900;
+        padding: 10px;
+
+
+        .slick {
+            overflow: inherit;
+
+            &.slick-initialized {
+                max-height: 100%;
+                width: 100%;
+            }
+
+            .slick-slide {
+                margin: 0 5px;
+            }
+
+            .slick-arrow {
+                opacity: 1 !important;
+                background: url("@{url}ui/arrow_box_pink.png@{version}") no-repeat !important;
+                width: 60px !important;
+                height: 60px !important;
+                background-size: auto 100% !important;
+                font: 0/0 !important;
+                color: transparent !important;
+                text-shadow: none !important;
+                background-color: transparent !important;
+                border: 0 !important;
+                opacity: 0.5 !important;
+
+                // &.slick-disabled {
+                //     display: block !important;
+                //     background-image: url("@{url}icon_arrow_circleGrey.png@{version}") !important;
+                //     cursor: default !important;
+                // }
+
+                &.slick-next  {
+                    right: -35px !important;
+                    background-position: center center !important;
+                }
+
+                &.slick-prev {
+                    left: -35px !important;
+                    background-position: center center !important;
+                    transform: rotate(-180deg) !important;
+                }
+            }
+
+
+
+
+            // .slick-dots {
+            //     text-align: center;
+            //     position: absolute;
+            //     bottom: 0;
+            //     left: 0;
+            //     width: 100%;
+
+            //     li {
+            //         display: inline-block;
+
+            //         &:not(:first-child) {
+            //             margin-left: 5px;
+            //         }
+
+            //         button {
+            //             position: relative;
+            //             width: 10px;
+            //             height: 10px;
+            //             border-radius: 50%;
+            //             overflow: hidden;
+            //             font-size: 0;
+            //             display: block;
+            //             background-color: #b5b7bf;
+            //         }
+
+            //         &.slick-active {
+            //             button {
+            //                 background-color: #ff0000;
+            //                 width: 25px;
+            //                 border-radius: 5px;
+            //             }
+            //         }
+            //     }
+            // }
+        }
+
+        .cm-prod-item {
+            background: #fff;
+            border: 1px solid #e1e1e1;
+            // border-radius: 10px;
+
+            a {
+                display: block;
+            }
+
+            .cm-prod-badge {
+                border-bottom-right-radius: 25px;
+                border-bottom-left-radius: 25px;
+                display: none;
+            }
+        }
+
+        // .cm-sold-out:after {
+        //     border-radius: 10px;
+        // }
+    }
+}
+//Desktop
+.cm-desktop {
+    .fe-slider {
+        .products-section {
+            .slick {
+                .slick-arrow {
+                    transition: all 200ms ease-out;
+
+                    &:hover {
+                        opacity: 0.7 !important;
+                    }
+
+                    // &.slick-disabled {
+                    //     opacity: 1 !important;
+                    // }
+                }
+            }
+        }
+    }
+}
+//Mobile
+.cm-mobile {
+    .fe-slider {
+        .products-section {
+            .slick {
+                .slick-arrow {
+                    width: 7.8125vw !important;
+                    height: 7.8125vw !important;
+
+                    &.slick-next  {
+                        right: 0 !important;
+                    }
+
+                    &.slick-prev {
+                        left: 0 !important;
+                    }
+                }
+
+                // .cm-sold-out:after {
+                //     border-radius: 1.5625vw;
+                // }
+            }
+        }
+    }
+}

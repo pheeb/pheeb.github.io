@@ -1,0 +1,34 @@
+mixin product(img, name, discount, rrp, price, classes)
+    li.cm-prod-item(class=classes)
+        a(href="#")
+            div.cm-prod-wrapper
+                div.cm-prod-image.cm-lazyLoading
+                    img(data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/" + img, src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png")
+                div.cm-prod-info
+                    h3.cm-prod-name #{name}
+                    div.cm-prod-price
+                        p.cm-selling-price RM #{price}
+                    if discount == "Special Price"
+                        div.cm-prod-discount
+                            span #{discount}
+                    else
+                        div.cm-prod-discount 
+                            | #{discount}
+                            span % OFF
+            div.cm-prod-badge
+                div.cm-badge-shipping
+                div.cm-badge-lowest
+                div.cm-badge-official
+                    
++product("prod1.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "70", "499.00", "200.00", "")
++product("prod2.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "70", "1,499.00", "1,200.00", "cm-sold-out")
++product("prod3.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "Special Price", "499.00", "200.00", "")
++product("prod4.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "70", "15,499.00", "21,999.00", "")
++product("prod5.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "70", "1,499.00", "1,200.00", "")
++product("prod6.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "Special Price", "499.00", "200.00", "")
++product("prod1.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "70", "499.00", "200.00", "")
++product("prod2.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "70", "15,499.00", "21,200.00", "cm-sold-out")
++product("prod3.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "Special Price", "499.00", "200.00", "")
++product("prod4.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "70", "499.00", "1999.00", "")
++product("prod5.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "70", "499.00", "200.00", "")
++product("prod6.jpg", "[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person", "Special Price", "499.00", "200.00", "")

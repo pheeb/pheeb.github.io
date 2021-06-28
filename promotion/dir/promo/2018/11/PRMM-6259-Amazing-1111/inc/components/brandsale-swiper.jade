@@ -1,0 +1,42 @@
+// Brand Sales            
+mixin brandSales(img_brand, img_brand_logo, discount_price, classes_colour, coupon_type, count_discount, count_discount_2, classes_coupon_amount, classes_coupon_amount_2)
+	.brand
+		.brand-image
+			img.cm-full-width(src=img_brand)
+			a.button(href='#/') Shop Now
+
+		.brand-content
+			.logo-hold
+				img.cm-logo(src=img_brand_logo)
+
+			.discount-hold
+				span.bold.discount #{discount_price}
+
+			.coupon-hold
+				.coupon-wrapper(class=classes_colour)
+					.coupon
+						.coupon-type #{coupon_type}
+						.coupon-amount
+							span(class=classes_coupon_amount) #{count_discount}
+							span(class=classes_coupon_amount_2) #{count_discount_2}
+					a.button(href='#/') Download
+
+				.tnc-hold
+					.modal(data-title='Terms & Conditions')
+						button T&C Apply
+						.modal-content
+							ul
+								li 15% Bonus Coupon (min purchase RM1, max discount RM25)
+								li Coupon is valid for one-time use only
+								li 123123
+			   
+
+
+				
+
+
+
+
+
+
++brandSales('http://image.11st.my/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/banner/0502/caring.jpg', 'http://image.11st.my/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/logo/0502/caring.png', '40% OFF Selected Items', 'blue', 'Shipping Fee Coupon', '50%' , '', 'amount', '')
