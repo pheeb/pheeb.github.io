@@ -1,0 +1,125 @@
+.cm-container#main-hd
+	.cm-row
+		.fe-main
+			+image('', 'main-banner-pc.gif', 'main-banner-bg-mw.png', 'cm-full-width')
+			if(device == "mobile" || device == "mobile-bo")
+				.fe-title.absolute_section
+					+image('', '', 'main-banner-title-mw.png', 'img-fluid')
+				.fe-doraemon-members.absolute_section
+					+image('', '', 'doraemon-members-mw.png', 'img-fluid')
+				.fe-clock-right
+					+image('', '', 'clock-main-banner-mw.png', 'img-fluid')
+				.fe-clock-left
+					+image('', '', 'clock-main-banner2-mw.png', 'img-fluid')
+
+
+		.fe-video-wrapper
+			+image('', 'video_bg_pc.png', 'video_bg_mw.png', 'cm-full-width')
+			.fe-video-holder
+				iframe(width='100%', height='100%', src='https://www.youtube.com/embed/f3PAhEVql2U', frameborder='0', allow='accelerometer; encrypted-media; gyroscope; picture-in-picture', allowfullscreen)
+			.fe-doraemon-01.absolute_section
+				+image('', 'doraemon1.png', 'doraemon1-mw.png', 'img-fluid')
+			.fe-doraemon-02
+				+image('', 'doraemon2.png', 'doraemon2-mw.png', 'img-fluid')
+		.fe-main
+			+image('', 'eyes-pc.gif', 'eyes-mw.gif', 'cm-full-width')
+		.fe-main
+			+image('', 'recommend-title-pc.png', 'recommend-title-mw.png', 'img-fluid')
+			.fe-bell-01
+				+image('', 'bell.png', 'bell-mw.png', 'img-fluid')
+			.fe-bell-02
+				+image('', 'bell2.png', 'bell2-mw.png', 'img-fluid')
+		.fe-main
+			+image('', 'products_bg.png', 'products_bg_mw.png', 'img-fluid')
+			.fe-products-wrapper
+				ul.list-style-wrapper
+					li
+						.fe-prod-box-holder
+							.fe-prod-visual
+								+image('products/1.png', '', '', 'img-fluid')
+							.fe-prod-title
+								+image('products/desc1.png', '', '', 'img-fluid')
+						.fe-btn-wrapper
+							a.link(href="https://www.11street.my/productdetail/doraemon-7-inch-plush-soft-toy-blue-christmas-hat-26460719" target=(device === "desktop" || device == "desktop-bo") ? "_blank" : undefined)
+								+image('', 'btn-buy-now.png', 'btn-buy-now-mw.png', 'img-fluid normal')
+								+image('', 'btn-buy-now-hover.png', '', 'img-fluid hover')
+					li
+						.fe-prod-box-holder
+							.fe-prod-visual
+								+image('products/2.png', '', '', 'img-fluid')
+							.fe-prod-title
+								+image('products/desc2.png', '', '', 'img-fluid')
+						.fe-btn-wrapper
+							a.link(href="https://www.11street.my/productdetail/doraemon-7-inch-plush-soft-toy-pink-26720131" target=(device === "desktop" || device == "desktop-bo") ? "_blank" : undefined)
+								+image('', 'btn-buy-now.png', 'btn-buy-now-mw.png', 'img-fluid normal')
+								+image('', 'btn-buy-now-hover.png', '', 'img-fluid hover')
+					li
+						.fe-prod-box-holder
+							.fe-prod-visual
+								+image('products/3.png', '', '', 'img-fluid')
+							.fe-prod-title
+								+image('products/desc3.png', '', '', 'img-fluid')
+						.fe-btn-wrapper
+							a.link(href="https://www.11street.my/productdetail/doraemon-7-inch-plush-soft-toy-yellow-26317597" target=(device === "desktop" || device == "desktop-bo") ? "_blank" : undefined)
+								+image('', 'btn-buy-now.png', 'btn-buy-now-mw.png', 'img-fluid normal')
+								+image('', 'btn-buy-now-hover.png', '', 'img-fluid hover')
+					li
+						.fe-prod-box-holder
+							.fe-prod-visual
+								+image('products/4.png', '', '', 'img-fluid')
+							.fe-prod-title
+								+image('products/desc4.png', '', '', 'img-fluid')
+						.fe-btn-wrapper
+							a.link(href="https://www.11street.my/productdetail/doraemon-plush-drawstring-bag-26328613" target=(device === "desktop" || device == "desktop-bo") ? "_blank" : undefined)
+								+image('', 'btn-buy-now.png', 'btn-buy-now-mw.png', 'img-fluid normal')
+								+image('', 'btn-buy-now-hover.png', '', 'img-fluid hover')
+					li
+						.fe-prod-box-holder
+							.fe-prod-visual
+								+image('products/5.png', '', '', 'img-fluid')
+							.fe-prod-title
+								+image('products/desc5.png', '', '', 'img-fluid')
+						.fe-btn-wrapper
+							a.link(href="https://www.11street.my/productdetail/doraemon-pillow-dorayaki-face-2-in-1-26317578" target=(device === "desktop" || device == "desktop-bo") ? "_blank" : undefined)
+								+image('', 'btn-buy-now.png', 'btn-buy-now-mw.png', 'img-fluid normal')
+								+image('', 'btn-buy-now-hover.png', '', 'img-fluid hover')
+					li
+						.fe-prod-box-holder
+							.fe-prod-visual
+								+image('products/6.png', '', '', 'img-fluid')
+							.fe-prod-title
+								+image('products/desc6.png', '', '', 'img-fluid')
+						.fe-btn-wrapper
+							a.link(href="https://www.11street.my/productdetail/doraemon-backpack-small-tongue-dm-02-0004-b-26328620" target=(device === "desktop" || device == "desktop-bo") ? "_blank" : undefined)
+								+image('', 'btn-buy-now.png', 'btn-buy-now-mw.png', 'img-fluid normal')
+								+image('', 'btn-buy-now-hover.png', '', 'img-fluid hover')
+		.fe-main
+			+image('', 'doraemon-collections-title.png', 'doraemon-collections-title-mw.png', 'cm-full-width')
+			.fe-biscuit-01
+				+image('', 'biscuit1.png', 'biscuit1-mw.png', 'img-fluid')
+			.fe-biscuit-02
+				+image('', 'biscuit2.png', 'biscuit2-mw.png', 'img-fluid')
+		.fe-main.doraemonCollection-section
+			+image('', 'doraemon-collection-bg.png', 'doraemon-collection-bg-mw.png', 'cm-full-width')
+			.fe-doraemon-collections-wrapper
+				ul.list-style-wrapper
+					li
+						.fe-logo-holder
+							+image('', 'shocking11-logo.png', 'shocking11-logo-mw.png', 'img-fluid')
+						.fe-btn-wrapper
+							a.link.js-anchor(href="#10")
+								+image('', 'btn-view-more.png', 'btn-view-more-left-mw.png', 'img-fluid normal')
+								+image('', 'btn-view-more-hover.png', '', 'img-fluid hover')
+					li
+						.fe-logo-holder
+							+image('', 'doraemon-merchandise-logo.png', 'doraemon-merchandise-logo-mw.png', 'img-fluid')
+						.fe-btn-wrapper
+							a.link.js-anchor(href="#20")
+								+image('', 'btn-view-more.png', 'btn-view-more-mw.png', 'img-fluid normal')
+								+image('', 'btn-view-more-hover.png', '', 'img-fluid hover')
+			.fe-doraemon-03.absolute_section
+				+image('', 'doraemon3.png', 'doraemon3-mw.png', 'img-fluid')
+			.fe-doraemon-04
+				+image('', 'doraemon4.png', 'doraemon4-mw.png', 'img-fluid')
+			
+			

@@ -1,0 +1,24 @@
+extend extend/_template.jade
+
+block configuration
+	- device = "mobile"
+	include config.jade
+	include inc/mixin/mixin.jade
+
+block stylesheet
+	link(rel="stylesheet", href=globalPath + globalVersion + "/css/global.css")
+	link(rel="stylesheet", href=cssPath + "plugin/slick.css")
+	link(rel="stylesheet", href=cssPath + "plugin/swiper.min.css")
+	link(rel="stylesheet", href=cssPath + "style.css")
+
+block content
+	include content.jade
+	include inc/content-tab.jade
+	
+block script
+	script(src=globalPath + globalVersion + "/js/core-min.js")
+	script(src=jsPath + "plugin/slick.min.js")
+	script(src=jsPath + "plugin/swiper.min.js")
+	script(src=jsPath + "partials/row-equaliser.js")
+	script(src=jsPath + "coupon.js")
+	script(src=jsPath + "function.js")
