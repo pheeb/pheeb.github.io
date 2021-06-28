@@ -1,0 +1,23 @@
+div.cm-container
+    div.cm-row
+        div.cm-application-wrapper
+            case device
+            
+                when "desktop"
+                    div.cm-app-icon
+                        img(src = "//promotion-assets.11street.my/assets/components/global/1.0.0/img/icon.png")
+                    div.cm-app-info
+                        div.cm-app-title Get More Deals on 11street App
+                        div.cm-app-desc Enter your mobile number. We'll send you a link to download 11street App
+                        div.cm-form-wrapper
+                            form(onsubmit = "sendSMS(this;) return false;")
+                                input.text(type = "text", name = "phone", id = "phone", placeholder = "0123456789")
+                                button(type = "submit", value = "submit", text = "submit") Send Me App
+                                
+                when "mobile"
+                    div.cm-app-icon
+                        img(src = "//promotion-assets.11street.my/assets/components/global/1.0.0/img/icon.png")
+                    div.cm-app-info
+                        div.cm-app-title More Deals on App
+                    div.cm-app-button
+                        a(href="#") Install Now

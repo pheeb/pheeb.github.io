@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>11Street Promotion</title>
+    <link rel="stylesheet" href="//prestomall.com/css_glb/shared/legacy.css">
+    <link rel="stylesheet" href="//prestomall.com/css_glb/layout.css">
+    <link rel="stylesheet" href="//prestomall.com/css_glb/common.css">
+    <link rel="stylesheet" href="//prestomall.com/css_glb/layout_flexible.css">
+    <script>
+      ELEVENSTMY = window.ELEVENSTMY || {};
+      ELEVENSTMY.UTILS = ELEVENSTMY.UTILS || {};
+      ELEVENSTMY.COMPONENTS = ELEVENSTMY.COMPONENTS || {};
+      
+    </script>
+    <script src="//prestomall.com/js/jquery1.8.3.js"></script>
+    <script src="//prestomall.com/js/common/plugins.js"></script>
+    <script src="//prestomall.com/js/plugins/jquery-autocomplete/1.3.0/jquery.autocomplete.js"></script>
+    <script src="//prestomall.com/js/plugins/jquery-slick/1.6.0/slick.js"></script>
+    <script src="//prestomall.com/js/plugins/jquery-menu-aim/jquery.menu-aim.js"></script>
+    <script src="//prestomall.com/js/components/gnb.js"></script>
+    <script src="//prestomall.com/js/common/ui.js"></script>
+    <script>
+      var coupon = {};
+      
+      coupon.getCouponCount = function(couponId, successFN, errorFN) {
+          console.log('couponId:', couponId);
+          return successFN($('[data-coupon-id=' + couponId + ']').find('.counter').data('value'))
+      }
+      
+      coupon.claimCoupon = function(couponId, successFN, errorFN) {
+          console.log('couponId:', couponId);
+          return successFN('Please check the Coupon Number: ' + couponId);
+      }
+      
+      $( document ).ready(function() {
+          $("#header").load("extend/header/header.html");
+          $(".footer").load("extend/footer/footer.html");
+      });
+      
+      
+    </script>
+  </head>
+  <body>
+    <header class="header" id="header"></header>
+    <main id="container">
+      <!-- promotion-->
+      <div class="cm-undefined" id="cm-promotion">
+      </div>
+      <!-- end promotion-->
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>

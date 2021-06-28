@@ -1,0 +1,1172 @@
+
+<!-- Promotion Setting-->
+<!-- Path Configuration-->
+<!-- Version Control-->
+<!-- url-->
+<!-- Images-->
+<!-- Products            -->
+<!-- Coupon Download--><!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>11Street Promotion</title>
+    <link rel="stylesheet" href="//prestomall.com/css_glb/shared/legacy.css">
+    <link rel="stylesheet" href="//prestomall.com/css_glb/layout.css">
+    <link rel="stylesheet" href="//prestomall.com/css_glb/common.css">
+    <link rel="stylesheet" href="//prestomall.com/css_glb/layout_flexible.css">
+    <script>
+      ELEVENSTMY = window.ELEVENSTMY || {};
+      ELEVENSTMY.UTILS = ELEVENSTMY.UTILS || {};
+      ELEVENSTMY.COMPONENTS = ELEVENSTMY.COMPONENTS || {};
+      
+    </script>
+    <script src="//prestomall.com/js/jquery1.8.3.js"></script>
+    <script src="//prestomall.com/js/common/plugins.js"></script>
+    <script src="//prestomall.com/js/plugins/jquery-autocomplete/1.3.0/jquery.autocomplete.js"></script>
+    <script src="//prestomall.com/js/plugins/jquery-slick/1.6.0/slick.js"></script>
+    <script src="//prestomall.com/js/plugins/jquery-menu-aim/jquery.menu-aim.js"></script>
+    <script src="//prestomall.com/js/components/gnb.js"></script>
+    <script src="//prestomall.com/js/common/ui.js"></script>
+    <script>
+      var coupon = {};
+      
+      coupon.getCouponCount = function(couponId, successFN, errorFN) {
+          console.log('couponId:', couponId);
+          return successFN($('[data-coupon-id=' + couponId + ']').find('.counter').data('value'))
+      }
+      
+      coupon.claimCoupon = function(couponId, successFN, errorFN) {
+          console.log('couponId:', couponId);
+          return successFN('Please check the Coupon Number: ' + couponId);
+      }
+      
+      $( document ).ready(function() {
+          $("#header").load("extend/header/header.html");
+          $(".footer").load("extend/footer/footer.html");
+      });
+      
+      
+    </script>
+  </head>
+  <body>
+    <header class="header" id="header"></header>
+    <main id="container">
+      <!-- promotion-->
+      <div class="cm-desktop" id="cm-promotion">
+        <link rel="stylesheet" href="//promotion-assets.11street.my/assets/components/global/1.0.0/css/global.css">
+        <link rel="stylesheet" href="assets/css/swiper.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <div class="cm-container">
+          <div class="cm-row">
+            <div class="fe-masthead"><img src="assets/img/desktop-masthead.png"/>
+            </div>
+          </div>
+          <div class="cm-row comingSoon-section">
+            <div class="fe-title"><img src="assets/img/comingsoon-title.png"/>
+            </div>
+            <div class="fe-banner">
+              <div class="fe-banner-wrapper"><img class="cm-full-width" src="assets/img/coming_soon_bg.png"/>
+                <div class="banner-sm">
+                  <div class="sm"><img class="cm-full-width" src="assets/img/flashdeal_banner.png"/>
+                  </div>
+                  <div class="sm"><img class="cm-full-width" src="assets/img/exclusivedeal_banner.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cm-row">
+            <div class="fe-topnavbar">
+              <ul>
+                <li class="btn1"><a class="js-anchor" href="#bransale-section" data-ga-track="bransale-section"><img class="original" src="assets/img/btn_brandsale.png"/><img class="hover" src="assets/img/btn_brandsale_hover.png"/></a></li>
+                <li class="btn2"><a class="js-anchor" href="#durianRuntuh-section" data-ga-track="durianRuntuh-section"><img class="original" src="assets/img/btn_durian_runtuh.png"/><img class="hover" src="assets/img/btn_durian_runtuh_hover.png"/></a></li>
+                <li class="btn3"><a class="js-anchor" href="#holidayDeal-section" data-ga-track="holidayDeal-section"><img class="original" src="assets/img/btn_holiday_deal.png"/><img class="hover" src="assets/img/btn_holiday_deal_hover.png"/></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cm-row">
+            <div class="fe-countdown">
+              <div class="countdown" id="time">
+                <div class="timer">
+                  <div class="clock hour"></div>
+                </div>
+                <div class="timer">
+                  <div class="clock minute"></div>
+                </div>
+                <div class="timer">
+                  <div class="clock second"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cm-row" id="faslDeal-section" data-ga-track="Flash Deals">
+            <div class="fe-title"><img src="assets/img/flashdeal_title.png"/>
+            </div>
+            <div class="fe-flashdeal-holder">
+              <div class="fe-tab-holder">
+                <div class="time fe-flashdeal active"><img class="normal" src="assets/img/lbl-11am.png"/><img class="active" src="assets/img/lbl-11am-active.png"/>
+                </div>
+                <div class="time fe-flashdeal"><img class="normal" src="assets/img/lbl-3pm.png"/><img class="active" src="assets/img/lbl-3pm-active.png"/>
+                </div>
+                <div class="time fe-flashdeal"><img class="normal" src="assets/img/lbl-6pm.png"/><img class="active" src="assets/img/lbl-6pm-active.png"/>
+                </div>
+              </div>
+              <div class="fe-flashdeal-offers">
+                <div class="flashdeal-wrapper">
+                  <div class="wrapper">
+                    <div class="slick slick-default slick-custom" data-items="4" data-scroll="4" data-spacing="10">
+                                            <li class="cm-prod-item"><a href="#">
+                                                <div class="cm-prod-wrapper">
+                                                  <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod1.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                  <div class="cm-prod-info">
+                                                    <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                    <div class="cm-prod-price">
+                                                      <p class="cm-selling-price">RM 200.00</p>
+                                                    </div>
+                                                    <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                  </div>
+                                                </div>
+                                                <div class="cm-prod-badge">
+                                                  <div class="cm-badge-shipping"></div>
+                                                  <div class="cm-badge-lowest"></div>
+                                                  <div class="cm-badge-official"></div>
+                                                </div></a></li>
+                                            <li class="cm-prod-item cm-sold-out"><a href="#">
+                                                <div class="cm-prod-wrapper">
+                                                  <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod2.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                  <div class="cm-prod-info">
+                                                    <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                    <div class="cm-prod-price">
+                                                      <p class="cm-selling-price">RM 200.00</p>
+                                                    </div>
+                                                    <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                  </div>
+                                                </div>
+                                                <div class="cm-prod-badge">
+                                                  <div class="cm-badge-shipping"></div>
+                                                  <div class="cm-badge-lowest"></div>
+                                                  <div class="cm-badge-official"></div>
+                                                </div></a></li>
+                                            <li class="cm-prod-item"><a href="#">
+                                                <div class="cm-prod-wrapper">
+                                                  <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod3.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                  <div class="cm-prod-info">
+                                                    <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                    <div class="cm-prod-price">
+                                                      <p class="cm-selling-price">RM 200.00</p>
+                                                    </div>
+                                                    <div class="cm-prod-discount"><span>Special Price</span></div>
+                                                  </div>
+                                                </div>
+                                                <div class="cm-prod-badge">
+                                                  <div class="cm-badge-shipping"></div>
+                                                  <div class="cm-badge-lowest"></div>
+                                                  <div class="cm-badge-official"></div>
+                                                </div></a></li>
+                                            <li class="cm-prod-item"><a href="#">
+                                                <div class="cm-prod-wrapper">
+                                                  <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod4.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                  <div class="cm-prod-info">
+                                                    <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                    <div class="cm-prod-price">
+                                                      <p class="cm-selling-price">RM 999,200.00</p>
+                                                    </div>
+                                                    <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                  </div>
+                                                </div>
+                                                <div class="cm-prod-badge">
+                                                  <div class="cm-badge-shipping"></div>
+                                                  <div class="cm-badge-lowest"></div>
+                                                  <div class="cm-badge-official"></div>
+                                                </div></a></li>
+                                            <li class="cm-prod-item"><a href="#">
+                                                <div class="cm-prod-wrapper">
+                                                  <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod5.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                  <div class="cm-prod-info">
+                                                    <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                    <div class="cm-prod-price">
+                                                      <p class="cm-selling-price">RM 200.00</p>
+                                                    </div>
+                                                    <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                  </div>
+                                                </div>
+                                                <div class="cm-prod-badge">
+                                                  <div class="cm-badge-shipping"></div>
+                                                  <div class="cm-badge-lowest"></div>
+                                                  <div class="cm-badge-official"></div>
+                                                </div></a></li>
+                                            <li class="cm-prod-item"><a href="#">
+                                                <div class="cm-prod-wrapper">
+                                                  <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod6.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                  <div class="cm-prod-info">
+                                                    <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                    <div class="cm-prod-price">
+                                                      <p class="cm-selling-price">RM 200.00</p>
+                                                    </div>
+                                                    <div class="cm-prod-discount"><span>Special Price</span></div>
+                                                  </div>
+                                                </div>
+                                                <div class="cm-prod-badge">
+                                                  <div class="cm-badge-shipping"></div>
+                                                  <div class="cm-badge-lowest"></div>
+                                                  <div class="cm-badge-official"></div>
+                                                </div></a></li>
+                                            <li class="cm-prod-item"><a href="#">
+                                                <div class="cm-prod-wrapper">
+                                                  <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod1.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                  <div class="cm-prod-info">
+                                                    <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                    <div class="cm-prod-price">
+                                                      <p class="cm-selling-price">RM 200.00</p>
+                                                    </div>
+                                                    <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                  </div>
+                                                </div>
+                                                <div class="cm-prod-badge">
+                                                  <div class="cm-badge-shipping"></div>
+                                                  <div class="cm-badge-lowest"></div>
+                                                  <div class="cm-badge-official"></div>
+                                                </div></a></li>
+                                            <li class="cm-prod-item cm-sold-out"><a href="#">
+                                                <div class="cm-prod-wrapper">
+                                                  <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod2.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                  <div class="cm-prod-info">
+                                                    <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                    <div class="cm-prod-price">
+                                                      <p class="cm-selling-price">RM 200.00</p>
+                                                    </div>
+                                                    <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                  </div>
+                                                </div>
+                                                <div class="cm-prod-badge">
+                                                  <div class="cm-badge-shipping"></div>
+                                                  <div class="cm-badge-lowest"></div>
+                                                  <div class="cm-badge-official"></div>
+                                                </div></a></li>
+                                            <li class="cm-prod-item"><a href="#">
+                                                <div class="cm-prod-wrapper">
+                                                  <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod3.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                  <div class="cm-prod-info">
+                                                    <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                    <div class="cm-prod-price">
+                                                      <p class="cm-selling-price">RM 200.00</p>
+                                                    </div>
+                                                    <div class="cm-prod-discount"><span>Special Price</span></div>
+                                                  </div>
+                                                </div>
+                                                <div class="cm-prod-badge">
+                                                  <div class="cm-badge-shipping"></div>
+                                                  <div class="cm-badge-lowest"></div>
+                                                  <div class="cm-badge-official"></div>
+                                                </div></a></li>
+                                            <li class="cm-prod-item"><a href="#">
+                                                <div class="cm-prod-wrapper">
+                                                  <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod4.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                  <div class="cm-prod-info">
+                                                    <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                    <div class="cm-prod-price">
+                                                      <p class="cm-selling-price">RM 999,200.00</p>
+                                                    </div>
+                                                    <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                  </div>
+                                                </div>
+                                                <div class="cm-prod-badge">
+                                                  <div class="cm-badge-shipping"></div>
+                                                  <div class="cm-badge-lowest"></div>
+                                                  <div class="cm-badge-official"></div>
+                                                </div></a></li>
+                                            <li class="cm-prod-item"><a href="#">
+                                                <div class="cm-prod-wrapper">
+                                                  <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod5.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                  <div class="cm-prod-info">
+                                                    <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                    <div class="cm-prod-price">
+                                                      <p class="cm-selling-price">RM 200.00</p>
+                                                    </div>
+                                                    <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                  </div>
+                                                </div>
+                                                <div class="cm-prod-badge">
+                                                  <div class="cm-badge-shipping"></div>
+                                                  <div class="cm-badge-lowest"></div>
+                                                  <div class="cm-badge-official"></div>
+                                                </div></a></li>
+                                            <li class="cm-prod-item"><a href="#">
+                                                <div class="cm-prod-wrapper">
+                                                  <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod6.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                  <div class="cm-prod-info">
+                                                    <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                    <div class="cm-prod-price">
+                                                      <p class="cm-selling-price">RM 200.00</p>
+                                                    </div>
+                                                    <div class="cm-prod-discount"><span>Special Price</span></div>
+                                                  </div>
+                                                </div>
+                                                <div class="cm-prod-badge">
+                                                  <div class="cm-badge-shipping"></div>
+                                                  <div class="cm-badge-lowest"></div>
+                                                  <div class="cm-badge-official"></div>
+                                                </div></a></li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cm-row" id="exclusive-section" data-ga-track="Exclusive Deals">
+            <div class="fe-title"><img src="assets/img/exclusivedeal_title.png"/>
+            </div>
+            <div class="fe-exclusivedeal-offers">
+              <div class="exclusivedeal-wrapper">
+                <div class="wrapper">
+                  <div class="slick slick-default slick-custom" data-items="4" data-scroll="4" data-spacing="10">
+                                        <li class="cm-prod-item"><a href="#">
+                                            <div class="cm-prod-wrapper">
+                                              <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod1.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                              <div class="cm-prod-info">
+                                                <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                <div class="cm-prod-price">
+                                                  <p class="cm-selling-price">RM 200.00</p>
+                                                </div>
+                                                <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                              </div>
+                                            </div>
+                                            <div class="cm-prod-badge">
+                                              <div class="cm-badge-shipping"></div>
+                                              <div class="cm-badge-lowest"></div>
+                                              <div class="cm-badge-official"></div>
+                                            </div></a></li>
+                                        <li class="cm-prod-item cm-sold-out"><a href="#">
+                                            <div class="cm-prod-wrapper">
+                                              <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod2.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                              <div class="cm-prod-info">
+                                                <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                <div class="cm-prod-price">
+                                                  <p class="cm-selling-price">RM 200.00</p>
+                                                </div>
+                                                <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                              </div>
+                                            </div>
+                                            <div class="cm-prod-badge">
+                                              <div class="cm-badge-shipping"></div>
+                                              <div class="cm-badge-lowest"></div>
+                                              <div class="cm-badge-official"></div>
+                                            </div></a></li>
+                                        <li class="cm-prod-item"><a href="#">
+                                            <div class="cm-prod-wrapper">
+                                              <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod3.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                              <div class="cm-prod-info">
+                                                <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                <div class="cm-prod-price">
+                                                  <p class="cm-selling-price">RM 200.00</p>
+                                                </div>
+                                                <div class="cm-prod-discount"><span>Special Price</span></div>
+                                              </div>
+                                            </div>
+                                            <div class="cm-prod-badge">
+                                              <div class="cm-badge-shipping"></div>
+                                              <div class="cm-badge-lowest"></div>
+                                              <div class="cm-badge-official"></div>
+                                            </div></a></li>
+                                        <li class="cm-prod-item"><a href="#">
+                                            <div class="cm-prod-wrapper">
+                                              <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod4.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                              <div class="cm-prod-info">
+                                                <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                <div class="cm-prod-price">
+                                                  <p class="cm-selling-price">RM 999,200.00</p>
+                                                </div>
+                                                <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                              </div>
+                                            </div>
+                                            <div class="cm-prod-badge">
+                                              <div class="cm-badge-shipping"></div>
+                                              <div class="cm-badge-lowest"></div>
+                                              <div class="cm-badge-official"></div>
+                                            </div></a></li>
+                                        <li class="cm-prod-item"><a href="#">
+                                            <div class="cm-prod-wrapper">
+                                              <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod5.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                              <div class="cm-prod-info">
+                                                <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                <div class="cm-prod-price">
+                                                  <p class="cm-selling-price">RM 200.00</p>
+                                                </div>
+                                                <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                              </div>
+                                            </div>
+                                            <div class="cm-prod-badge">
+                                              <div class="cm-badge-shipping"></div>
+                                              <div class="cm-badge-lowest"></div>
+                                              <div class="cm-badge-official"></div>
+                                            </div></a></li>
+                                        <li class="cm-prod-item"><a href="#">
+                                            <div class="cm-prod-wrapper">
+                                              <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod6.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                              <div class="cm-prod-info">
+                                                <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                <div class="cm-prod-price">
+                                                  <p class="cm-selling-price">RM 200.00</p>
+                                                </div>
+                                                <div class="cm-prod-discount"><span>Special Price</span></div>
+                                              </div>
+                                            </div>
+                                            <div class="cm-prod-badge">
+                                              <div class="cm-badge-shipping"></div>
+                                              <div class="cm-badge-lowest"></div>
+                                              <div class="cm-badge-official"></div>
+                                            </div></a></li>
+                                        <li class="cm-prod-item"><a href="#">
+                                            <div class="cm-prod-wrapper">
+                                              <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod1.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                              <div class="cm-prod-info">
+                                                <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                <div class="cm-prod-price">
+                                                  <p class="cm-selling-price">RM 200.00</p>
+                                                </div>
+                                                <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                              </div>
+                                            </div>
+                                            <div class="cm-prod-badge">
+                                              <div class="cm-badge-shipping"></div>
+                                              <div class="cm-badge-lowest"></div>
+                                              <div class="cm-badge-official"></div>
+                                            </div></a></li>
+                                        <li class="cm-prod-item cm-sold-out"><a href="#">
+                                            <div class="cm-prod-wrapper">
+                                              <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod2.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                              <div class="cm-prod-info">
+                                                <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                <div class="cm-prod-price">
+                                                  <p class="cm-selling-price">RM 200.00</p>
+                                                </div>
+                                                <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                              </div>
+                                            </div>
+                                            <div class="cm-prod-badge">
+                                              <div class="cm-badge-shipping"></div>
+                                              <div class="cm-badge-lowest"></div>
+                                              <div class="cm-badge-official"></div>
+                                            </div></a></li>
+                                        <li class="cm-prod-item"><a href="#">
+                                            <div class="cm-prod-wrapper">
+                                              <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod3.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                              <div class="cm-prod-info">
+                                                <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                <div class="cm-prod-price">
+                                                  <p class="cm-selling-price">RM 200.00</p>
+                                                </div>
+                                                <div class="cm-prod-discount"><span>Special Price</span></div>
+                                              </div>
+                                            </div>
+                                            <div class="cm-prod-badge">
+                                              <div class="cm-badge-shipping"></div>
+                                              <div class="cm-badge-lowest"></div>
+                                              <div class="cm-badge-official"></div>
+                                            </div></a></li>
+                                        <li class="cm-prod-item"><a href="#">
+                                            <div class="cm-prod-wrapper">
+                                              <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod4.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                              <div class="cm-prod-info">
+                                                <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                <div class="cm-prod-price">
+                                                  <p class="cm-selling-price">RM 999,200.00</p>
+                                                </div>
+                                                <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                              </div>
+                                            </div>
+                                            <div class="cm-prod-badge">
+                                              <div class="cm-badge-shipping"></div>
+                                              <div class="cm-badge-lowest"></div>
+                                              <div class="cm-badge-official"></div>
+                                            </div></a></li>
+                                        <li class="cm-prod-item"><a href="#">
+                                            <div class="cm-prod-wrapper">
+                                              <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod5.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                              <div class="cm-prod-info">
+                                                <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                <div class="cm-prod-price">
+                                                  <p class="cm-selling-price">RM 200.00</p>
+                                                </div>
+                                                <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                              </div>
+                                            </div>
+                                            <div class="cm-prod-badge">
+                                              <div class="cm-badge-shipping"></div>
+                                              <div class="cm-badge-lowest"></div>
+                                              <div class="cm-badge-official"></div>
+                                            </div></a></li>
+                                        <li class="cm-prod-item"><a href="#">
+                                            <div class="cm-prod-wrapper">
+                                              <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod6.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                              <div class="cm-prod-info">
+                                                <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                <div class="cm-prod-price">
+                                                  <p class="cm-selling-price">RM 200.00</p>
+                                                </div>
+                                                <div class="cm-prod-discount"><span>Special Price</span></div>
+                                              </div>
+                                            </div>
+                                            <div class="cm-prod-badge">
+                                              <div class="cm-badge-shipping"></div>
+                                              <div class="cm-badge-lowest"></div>
+                                              <div class="cm-badge-official"></div>
+                                            </div></a></li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cm-row" id="bransale-section" data-ga-track="Brand Sale">
+            <div class="fe-title"><img src="assets/img/brandsales_title.png"/>
+            </div>
+            <div class="fe-brandsale">
+              <div class="fe-brand-wrapper">
+                <div class="brand-wrapper clearfix">
+                  <div class="brand">
+                    <div class="brand-image"><img class="cm-full-width" src="http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/banner/0502/caring.jpg"><a class="button" href="#/">Shop Now</a></div>
+                    <div class="brand-content">
+                      <div class="logo-hold"><img class="cm-logo" src="http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/logo/0502/caring.png"></div>
+                      <div class="discount-hold"><span class="bold discount">40%</span><span class="bold">OFF</span><span>Selected Items</span></div>
+                      <div class="coupon-hold">
+                        <div class="coupon-wrapper blue">
+                          <div class="coupon">
+                            <div class="coupon-type">Shipping Fee Coupon</div>
+                            <div class="coupon-amount"><span>RM</span><span class="amount">50</span></div>
+                          </div><a class="button" href="#/">Download</a>
+                        </div>
+                        <div class="tnc-hold">
+                          <div class="modal" data-title="Terms &amp; Conditions">
+                            <button>T&C Apply</button>
+                            <div class="modal-content">
+                              <ul>
+                                <li>15% Bonus Coupon (min purchase RM1, max discount RM25)</li>
+                                <li>Coupon is valid for one-time use only</li>
+                                <li>123123</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="brand">
+                    <div class="brand-image"><img class="cm-full-width" src="http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/banner/0502/jocom.jpg"><a class="button" href="#/">Shop Now</a></div>
+                    <div class="brand-content">
+                      <div class="logo-hold"><img class="cm-logo" src="http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/logo/0502/jocom.png"></div>
+                      <div class="discount-hold"><span class="bold discount">40%</span><span class="bold">OFF</span><span>Selected Items</span></div>
+                      <div class="coupon-hold">
+                        <div class="coupon-wrapper red">
+                          <div class="coupon">
+                            <div class="coupon-amount"><span class="amount">50%</span></div>
+                          </div><a class="button" href="#/">Download</a>
+                        </div>
+                        <div class="tnc-hold">
+                          <div class="modal" data-title="Terms &amp; Conditions">
+                            <button>T&C Apply</button>
+                            <div class="modal-content">
+                              <ul>
+                                <li>15% Bonus Coupon (min purchase RM1, max discount RM25)</li>
+                                <li>Coupon is valid for one-time use only</li>
+                                <li>123123</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="brand">
+                    <div class="brand-image"><img class="cm-full-width" src="http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/banner/0502/vivo.jpg"><a class="button" href="#/">Shop Now</a></div>
+                    <div class="brand-content">
+                      <div class="logo-hold"><img class="cm-logo" src="http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/logo/0502/vivo.png"></div>
+                      <div class="discount-hold"><span class="bold discount">40%</span><span class="bold">OFF</span><span>Selected Items</span></div>
+                      <div class="coupon-hold">
+                        <div class="coupon-wrapper green">
+                          <div class="coupon">
+                            <div class="coupon-type">Store Cart Coupon</div>
+                            <div class="coupon-amount"><span>RM</span><span class="amount">50</span></div>
+                          </div><a class="button" href="#/">Download</a>
+                        </div>
+                        <div class="tnc-hold">
+                          <div class="modal" data-title="Terms &amp; Conditions">
+                            <button>T&C Apply</button>
+                            <div class="modal-content">
+                              <ul>
+                                <li>15% Bonus Coupon (min purchase RM1, max discount RM25)</li>
+                                <li>Coupon is valid for one-time use only</li>
+                                <li>123123</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fe-brandlogo-wrapper">
+              <div class="fe-brandlogo-holder">
+                <ul>
+                  <li><img class="img-fluid" src="assets/img/logo/888.jpg"/>
+                  </li>
+                  <li><img class="img-fluid" src="assets/img/logo/Claytan.jpg"/>
+                  </li>
+                  <li><img class="img-fluid" src="assets/img/logo/Coleman.jpg"/>
+                  </li>
+                  <li><img class="img-fluid" src="assets/img/logo/Dale&amp;Cecil.jpg"/>
+                  </li>
+                  <li><img class="img-fluid" src="assets/img/logo/DryPro.jpg"/>
+                  </li>
+                  <li><img class="img-fluid" src="assets/img/logo/durex.jpg"/>
+                  </li>
+                  <li><img class="img-fluid" src="assets/img/logo/EuYanSang.jpg"/>
+                  </li>
+                  <li><img class="img-fluid" src="assets/img/logo/JEOEL.jpg"/>
+                  </li>
+                  <li><img class="img-fluid" src="assets/img/logo/Khind.jpg"/>
+                  </li>
+                  <li><img class="img-fluid" src="assets/img/logo/Kinohimitsu.jpg"/>
+                  </li>
+                  <li><img class="img-fluid" src="assets/img/logo/Nestle.jpg"/>
+                  </li>
+                  <li><img class="img-fluid" src="assets/img/logo/Panasonic.jpg"/>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cm-row" id="couponStreet-section" data-ga-track="Coupon Street">
+            <div class="fe-flashsale">
+              <div class="image-hold"><a href="#"><img src="assets/img/StoreCart_Sayangi_Malaysia.gif"/></a></div>
+            </div>
+          </div>
+          <div class="cm-row" id="durianRuntuh-section" data-ga-track="Durian Runtuh">
+            <div class="fe-title"><img src="assets/img/durainruntuh_title.png"/>
+            </div>
+            <div class="fe-durian-runtuh">
+              <div class="image-hold"><a href="#"> <img src="assets/img/durianruntuh-desktop.gif"/></a></div>
+            </div>
+          </div>
+          <div class="cm-row" data-ga-track="Holiday Deals">
+            <div id="holidayDeal-section">
+              <div class="fe-title"><img src="assets/img/holidaydeals_title.png"/>
+              </div>
+              <div class="fe-holiday-deal">
+                <div class="image-hold"><a href="#/"><img src="assets/img/holiday-deal-desktop.jpg"/></a></div>
+              </div>
+            </div>
+            <div id="themePark-section">
+              <div class="fe-themepark-main">
+                <div class="fe-title"><img src="assets/img/themepark_title.png"/>
+                </div>
+                <div class="fe-themepark-content-holder">
+                  <div class="themepark-wrapper">
+                    <div class="wrapper">
+                      <div class="slick slick-default slick-custom" data-items="4" data-scroll="4" data-spacing="10">
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod1.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item cm-sold-out"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod2.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod3.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"><span>Special Price</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod4.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 999,200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod5.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod6.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"><span>Special Price</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod1.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item cm-sold-out"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod2.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod3.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"><span>Special Price</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod4.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 999,200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod5.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod6.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"><span>Special Price</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fe-travel-section" id="travelEssential-section">
+              <div class="fe-title"><img src="assets/img/travel_title.png"/>
+              </div>
+              <div class="fe-travel-main">
+                <div class="fe-travel-content-holder">
+                  <div class="travel-wrapper">
+                    <div class="wrapper">
+                      <div class="slick slick-default slick-custom" data-items="4" data-scroll="4" data-spacing="10">
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod1.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item cm-sold-out"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod2.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod3.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"><span>Special Price</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod4.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 999,200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod5.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod6.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"><span>Special Price</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod1.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item cm-sold-out"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod2.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod3.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"><span>Special Price</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod4.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 999,200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod5.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"> 70<span>% OFF</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                                                <li class="cm-prod-item"><a href="#">
+                                                    <div class="cm-prod-wrapper">
+                                                      <div class="cm-prod-image cm-lazyLoading"><img data-lazy="//promotion-assets.11street.my/assets/components/global/1.0.0/img/prod6.jpg" src="//promotion-assets.11street.my/assets/components/global/1.0.0/img/blank.png"></div>
+                                                      <div class="cm-prod-info">
+                                                        <h3 class="cm-prod-name">[Urban Retreat Beauty] 2.5-Hour Signature Collagen Facial for 1 Person</h3>
+                                                        <div class="cm-prod-price">
+                                                          <p class="cm-selling-price">RM 200.00</p>
+                                                        </div>
+                                                        <div class="cm-prod-discount"><span>Special Price</span></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="cm-prod-badge">
+                                                      <div class="cm-badge-shipping"></div>
+                                                      <div class="cm-badge-lowest"></div>
+                                                      <div class="cm-badge-official"></div>
+                                                    </div></a></li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cm-row" id="highlights-section" data-ga-track="Category Sale">
+            <div class="fe-title"><img src="assets/img/highlights_title.png"/>
+            </div>
+            <div class="fe-special-time">
+              <div class="special-wrapper">
+                <div class="special-category-card">
+                  <div class="ct-card">
+                    <div class="category-type">
+                      <div class="deco"><a href="#/"><img src="assets/img/deco-fashion-desktop-phase-04.png"/></a></div>
+                    </div>
+                  </div>
+                  <div class="ct-card">
+                    <div class="category-type">
+                      <div class="deco"><a href="#/"><img src="assets/img/deco-hb-desktop-phase-04.png"/></a></div>
+                    </div>
+                  </div>
+                  <div class="ct-card">
+                    <div class="category-type">
+                      <div class="deco"><a href="#/"><img src="assets/img/deco-sport-desktop-phase-04.png"/></a></div>
+                    </div>
+                  </div>
+                  <div class="ct-card">
+                    <div class="category-type">
+                      <div class="deco"><a href="#/"><img src="assets/img/deco-evoucher-desktop-phase-04.png"/></a></div>
+                    </div>
+                  </div>
+                  <div class="ct-card">
+                    <div class="category-type">
+                      <div class="deco"><a href="#/"><img src="assets/img/deco-hl-desktop-phase-04.png"/></a></div>
+                    </div>
+                  </div>
+                  <div class="ct-card">
+                    <div class="category-type">
+                      <div class="deco"><a href="#/"><img src="assets/img/deco-he-desktop-phase-04.png"/></a></div>
+                    </div>
+                  </div>
+                  <div class="ct-card">
+                    <div class="category-type">
+                      <div class="deco"><a href="#/"><img src="assets/img/deco-mt-desktop-phase-04.png"/></a></div>
+                    </div>
+                  </div>
+                  <div class="ct-card">
+                    <div class="category-type">
+                      <div class="deco"><a href="#/"><img src="assets/img/deco-grocery-desktop-phase-04.png"/></a></div>
+                    </div>
+                  </div>
+                  <div class="ct-card">
+                    <div class="category-type">
+                      <div class="deco"><a href="#/"><img src="assets/img/deco-bk-desktop-phase-04.png"/></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cm-row" data-ga-track="Promotion">
+            <div class="fe-banner">
+              <div class="fe-banner-wrapper2">
+                <div class="banner-sm">
+                  <div class="sm"><a href="#"><img class="cm-full-width" src="assets/img/shop-n-spin-banner.jpg"/></a></div>
+                  <div class="sm"><a href="#/"><img class="cm-full-width" src="assets/img/shoponapp-banner.jpg"/></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fe-tab-container">
+          <ul class="cm-tab-wrapper">
+                    <li class="cm-tab-item" id=""><a class="js-anchor" href="#faslDeal-section" data-ga-track="Flash Deals"> 
+                        <div class="title"><span>Flash Deals Below RM 61</span></div><img class="original" src="assets/img/right-nav-icon1.png"><img class="hover" src="assets/img/right-nav-icon1-hover.png"></a></li>
+                    <li class="cm-tab-item" id=""><a class="js-anchor" href="#exclusive-section" data-ga-track="Exclusive Deals"> 
+                        <div class="title"><span>Exclusive Deals</span></div><img class="original" src="assets/img/right-nav-icon2.png"><img class="hover" src="assets/img/right-nav-icon2-hover.png"></a></li>
+                    <li class="cm-tab-item" id=""><a class="js-anchor" href="#couponStreet-section" data-ga-track="Coupon Street"> 
+                        <div class="title"><span>Coupon Street</span></div><img class="original" src="assets/img/right-nav-icon3.png"><img class="hover" src="assets/img/right-nav-icon3-hover.png"></a></li>
+                    <li class="cm-tab-item" id=""><a class="js-anchor" href="#bransale-section" data-ga-track="Brand Sale"> 
+                        <div class="title"><span>Brand Sales</span></div><img class="original" src="assets/img/right-nav-icon4.png"><img class="hover" src="assets/img/right-nav-icon4-hover.png"></a></li>
+                    <li class="cm-tab-item" id=""><a class="js-anchor" href="#durianRuntuh-section" data-ga-track="Durian Runtuh"> 
+                        <div class="title"><span>Durian Runtuh Game</span></div><img class="original" src="assets/img/right-nav-icon5.png"><img class="hover" src="assets/img/right-nav-icon5-hover.png"></a></li>
+                    <li class="cm-tab-item" id=""><a class="js-anchor" href="#holidayDeal-section" data-ga-track="Holiday Deals"> 
+                        <div class="title"><span>Holiday Deals</span></div><img class="original" src="assets/img/right-nav-icon6.png"><img class="hover" src="assets/img/right-nav-icon6-hover.png"></a></li>
+                    <li class="cm-tab-item" id=""><a class="js-anchor" href="#themePark-section" data-ga-track="Holiday Deals"> 
+                        <div class="title"><span>Themepark and Ticket</span></div><img class="original" src="assets/img/right-nav-icon7.png"><img class="hover" src="assets/img/right-nav-icon7-hover.png"></a></li>
+                    <li class="cm-tab-item" id=""><a class="js-anchor" href="#travelEssential-section" data-ga-track="Holiday Deals"> 
+                        <div class="title"><span>Travel Essential</span></div><img class="original" src="assets/img/right-nav-icon8.png"><img class="hover" src="assets/img/right-nav-icon8-hover.png"></a></li>
+                    <li class="cm-tab-item" id="Promotion"><a class="js-anchor" href="#highlights-section" data-ga-track="Category Sale"> 
+                        <div class="title"><span>Highlights</span></div><img class="original" src="assets/img/right-nav-icon9.png"><img class="hover" src="assets/img/right-nav-icon9-hover.png"></a></li>
+                    <li class="cm-tab-item" id="scrollTop"><a class="scrollTop" href="#"> 
+                        <div class="title"><span>Back to Top</span></div><img class="original" src="assets/img/right-nav-icon10.png"><img class="hover" src="assets/img/right-nav-icon10-hover.png"></a></li>
+          </ul>
+        </div>
+        <script src="//promotion-assets.11street.my/assets/components/global/1.0.0/js/core-min.js"></script>
+        <script src="assets/js/swiper.min.js"></script>
+        <script src="assets/js/function.js"></script>
+      </div>
+      <!-- end promotion-->
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>

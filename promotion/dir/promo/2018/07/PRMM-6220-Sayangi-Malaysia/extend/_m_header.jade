@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0")
+        meta(name="format-detection", content="telephone=no")
+        
+        title 11Street Promotion
+        
+        link(rel="stylesheet", href="//m.prestomall.com/css_glb/common/common.css")
+        
+        script(src="//m.prestomall.com/js_glb/common/jquery-2.1.1.min.js")
+        script(src="//m.prestomall.com/js_glb/common/common_ui.js")
+        script(src="//prestomall.com/js/plugins/jquery-slick/1.6.0/slick.js")
+        
+        script.
+            var coupon = {};
+            
+            coupon.getCouponCount = function(couponId, successFN, errorFN) {
+                console.log('couponId:', couponId);
+                return successFN($('[data-coupon-id=' + couponId + ']').find('.counter').data('value'))
+            }
+            
+            coupon.claimCoupon = function(couponId, successFN, errorFN) {
+                console.log('couponId:', couponId);
+                return successFN('Please check the Coupon Number: ' + couponId);
+            }
+            
+            $( document ).ready(function() {
+                $("#header").load("extend/header/m_header.html");
+                $("#footer").load("extend/footer/m_footer.html");
+            });
+    
+    body
+        div#wrap
+            div#header
+            div#container.mobile
+                // promotion
+                div(id="cm-promotion", class="cm-" + device)
+                    block stylesheet
+                    block content
+                    block script
+                // end promotion
+                
+            div#footer
+                        
+        

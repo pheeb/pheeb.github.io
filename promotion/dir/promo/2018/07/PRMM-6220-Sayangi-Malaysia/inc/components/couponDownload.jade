@@ -1,0 +1,24 @@
+// RPU
+p(data-toggle="elevenstmy-counter", data-target="#btn-download-1", data-coupon-id="650549636")
+a#btn-download-1(href="#") Download
+// NPU
+a(href="javascript:cmCoupon('CM115', '650549636');") Download
+
+script.
+    $(document).ready(function() {
+        downloadMessage = {
+            title : "Modal Title",
+            event_ended : "",
+            error : "",
+            stock_null : "",
+            out_of_stock : "",
+            redeemed : "",
+            insufficient : "",
+            mem_lock : "",
+            timeout : "",
+            success : "",
+            not_npu : "",
+            limit_reached : "",
+            not_whitelist : ""
+        }
+    })

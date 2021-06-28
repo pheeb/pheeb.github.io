@@ -1,0 +1,13 @@
+// configuration
+@promotion : "PRMM-6220-Sayangi-Malaysia";
+@year : "2018";
+@month : "07";
+
+// path
+.config (@path) when (@path = "aws") {
+    @url : "//promotion-assets.11street.my/assets/@{year}/@{month}/@{promotion}/assets/img/";
+}
+.config (@path) when (default()) {
+    @url : "../img/";
+}
+.config("default");

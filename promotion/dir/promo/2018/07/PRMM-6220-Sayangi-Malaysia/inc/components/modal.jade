@@ -1,0 +1,36 @@
+// default modal
+div.modal(data-title="Terms & Conditions")
+    button Terms & Conditions Apply
+    div.modal-content
+        coupon
+            img(src=imgPath + "coupon_11p.png")
+        div.cm-message
+            p Congratulation XXX. You got a 100% Bonus Coupon!
+            p Valid only one day.
+        ul
+            li 15% Bonus Coupon (min purchase RM1, max discount RM25)
+            li Coupon is valid for one-time use onl
+            li 123123
+    div.modal-button
+        a.btn.btn-default Shocking 11
+        a(href="http://promotion.11street.my/2018/03/family-bonanza").btn.btn-primary Shop Now
+        
+// custom modal
+button.cm-download Download        
+div.custom-modal
+    div.modal-content
+        coupon
+            img(src=imgPath + "coupon_11p.png")
+        div.cm-message
+            p success
+            p Valid only one day.
+    div.modal-button
+        a(href="http://promotion.11street.my/2018/03/family-bonanza").btn.btn-default Shocking 11
+        a(href="http://promotion.11street.my/2018/03/family-bonanza").btn.btn-primary Shop Now
+
+script.
+    $('.cm-download').on('click', function() {
+        $('.custom-modal').cmModal({
+            title : 'Modal Title'
+        });
+    })

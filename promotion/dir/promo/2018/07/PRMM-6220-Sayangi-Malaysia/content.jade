@@ -1,0 +1,383 @@
+.cm-container
+    .cm-row
+        .fe-masthead
+            +image('desktop-masthead.png', '', '', '')
+
+    .cm-row.comingSoon-section
+        .fe-title
+            +image('', 'comingsoon-title.png', 'mw_comingsoon-title.png', '')
+
+        .fe-banner
+            .fe-banner-wrapper
+                +image('', 'coming_soon_bg.png', 'mw-coming_soon_bg.png', 'cm-full-width')
+
+                .banner-sm
+                    .sm
+                        +image('', 'flashdeal_banner.png', 'mw-flashdeal_banner.png', 'cm-full-width')
+                    .sm
+                        +image('', 'exclusivedeal_banner.png', 'mw-exclusivedeal_banner.png', 'cm-full-width')
+
+    if (device == "desktop")
+        .cm-row
+            .fe-topnavbar
+                ul
+                    li.btn1
+                        a.js-anchor(href="#bransale-section", data-ga-track="bransale-section")
+                            +image('', 'btn_brandsale.png', '','original')
+                            +image('', 'btn_brandsale_hover.png', '','hover')
+                    li.btn2
+                        a.js-anchor(href="#durianRuntuh-section", data-ga-track="durianRuntuh-section")
+                            +image('', 'btn_durian_runtuh.png', '','original')
+                            +image('', 'btn_durian_runtuh_hover.png', '','hover')
+                    li.btn3
+                        a.js-anchor(href="#holidayDeal-section", data-ga-track="holidayDeal-section")
+                            +image('', 'btn_holiday_deal.png', '', 'original')
+                            +image('', 'btn_holiday_deal_hover.png', '', 'hover')
+
+
+    .cm-row
+        .fe-countdown
+            #time.countdown
+                .timer
+                    .clock.hour
+                    
+                .timer
+                    .clock.minute
+                    
+                .timer
+                    .clock.second
+
+                    
+    .cm-row#faslDeal-section(data-ga-track="Flash Deals")
+        .fe-title
+            +image('', 'flashdeal_title.png', 'mw_flashdeal_title.png', '')
+
+
+        .fe-flashdeal-holder
+
+            .fe-tab-holder
+                .time.fe-flashdeal.active
+                    +image('lbl-11am.png', '', '','normal') 
+                    +image('lbl-11am-active.png', '', '','active')  
+            
+                .time.fe-flashdeal
+                    +image('lbl-3pm.png', '', '','normal') 
+                    +image('lbl-3pm-active.png', '', '','active')
+                    
+                .time.fe-flashdeal
+                    +image('lbl-6pm.png', '', '','normal') 
+                    +image('lbl-6pm-active.png', '', '','active')
+            
+            .fe-flashdeal-offers
+                .flashdeal-wrapper
+                    .wrapper
+                        div.slick.slick-default.slick-custom(data-items=(device == "desktop") ? "4" : "2.5" , data-scroll=(device == "desktop") ? "4" : "2", data-spacing="10")
+                                include inc/components/product.jade
+
+
+
+    .cm-row#exclusive-section(data-ga-track="Exclusive Deals")
+        .fe-title
+            +image('', 'exclusivedeal_title.png', 'mw_exclusivedeal_title.png', '')
+
+        .fe-exclusivedeal-offers
+            .exclusivedeal-wrapper
+                .wrapper
+                    div.slick.slick-default.slick-custom(data-items=(device == "desktop") ? "4" : "2.5" , data-scroll=(device == "desktop") ? "4" : "2", data-spacing="10")
+                        include inc/components/product.jade
+
+    
+    
+    .cm-row#bransale-section(data-ga-track="Brand Sale")
+        .fe-title
+            +image('', 'brandsales_title.png', 'mw_brandsales_title.png', '')
+
+        .fe-brandsale
+            .fe-brand-wrapper
+                //- case device
+                //-     when 'mobile'
+                //-         +image('', '', 'mobile-brand-sale-phase-04.png', 'fe-brand-image')
+                .brand-wrapper.clearfix
+                    case device
+                        when 'desktop'
+                            .brand
+                                .brand-image
+                                    img.cm-full-width(src='http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/banner/0502/caring.jpg')
+                                    a.button(href='#/') Shop Now
+                                .brand-content
+                                    .logo-hold
+                                        img.cm-logo(src='http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/logo/0502/caring.png')
+                                    .discount-hold
+                                        span.bold.discount 40%
+                                        span.bold OFF
+                                        span Selected Items
+                                    .coupon-hold
+                                        .coupon-wrapper.blue
+                                            .coupon
+                                                .coupon-type Shipping Fee Coupon
+                                                .coupon-amount
+                                                    span RM
+                                                    span.amount 50
+                                            a.button(href='#/') Download
+                                        .tnc-hold
+                                            .modal(data-title='Terms & Conditions')
+                                                button T&C Apply
+                                                .modal-content
+                                                    ul
+                                                        li 15% Bonus Coupon (min purchase RM1, max discount RM25)
+                                                        li Coupon is valid for one-time use only
+                                                        li 123123
+                                        
+                            .brand
+                                .brand-image
+                                    img.cm-full-width(src='http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/banner/0502/jocom.jpg')
+                                    a.button(href='#/') Shop Now
+                                .brand-content
+                                    .logo-hold
+                                        img.cm-logo(src='http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/logo/0502/jocom.png')
+                                    .discount-hold
+                                        span.bold.discount 40%
+                                        span.bold OFF
+                                        span Selected Items
+                                    .coupon-hold
+                                        .coupon-wrapper.red
+                                            .coupon
+                                                .coupon-amount
+                                                    span.amount 50%
+                                            a.button(href='#/') Download
+                                        .tnc-hold
+                                            .modal(data-title='Terms & Conditions')
+                                                button T&C Apply
+                                                .modal-content
+                                                    ul
+                                                        li 15% Bonus Coupon (min purchase RM1, max discount RM25)
+                                                        li Coupon is valid for one-time use only
+                                                        li 123123
+                            .brand
+                                .brand-image
+                                    img.cm-full-width(src='http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/banner/0502/vivo.jpg')
+                                    a.button(href='#/') Shop Now
+                                .brand-content
+                                    .logo-hold
+                                        img.cm-logo(src='http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/logo/0502/vivo.png')
+                                    .discount-hold
+                                        span.bold.discount 40%
+                                        span.bold OFF
+                                        span Selected Items
+                                    .coupon-hold
+                                        .coupon-wrapper.green
+                                            .coupon
+                                                .coupon-type Store Cart Coupon
+                                                .coupon-amount
+                                                    span RM
+                                                    span.amount 50
+                                            a.button(href='#/') Download
+                                        .tnc-hold
+                                            .modal(data-title='Terms & Conditions')
+                                                button T&C Apply
+                                                .modal-content
+                                                    ul
+                                                        li 15% Bonus Coupon (min purchase RM1, max discount RM25)
+                                                        li Coupon is valid for one-time use only
+                                                        li 123123
+                        when 'mobile'
+                            div.slick.slick-default(data-items="1" , data-scroll= "1", data-spacing="20"  data-arrows='false' data-dots='true')
+                                .brand
+                                    .brand-image
+                                        img.cm-full-width(src='http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/banner/0502/caring.jpg')
+                                        a.button(href='#/') Shop Now
+                                    .brand-content
+                                        .logo-hold
+                                            img.cm-logo(src='http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/logo/0502/caring.png')
+                                        .discount-hold
+                                            span.bold.discount 40%
+                                            span.bold OFF
+                                            span Selected Items
+                                        .coupon-hold
+                                            .coupon-wrapper.green
+                                                .coupon
+                                                    .coupon-type Store Cart Coupon
+                                                    .coupon-amount
+                                                        span RM
+                                                        span.amount 50
+                                                a.button(href='#/') Download
+                                            .tnc-hold
+                                                .modal(data-title='Terms & Conditions')
+                                                    button T&C Apply
+                                                    .modal-content
+                                                        ul
+                                                            li 15% Bonus Coupon (min purchase RM1, max discount RM25)
+                                                            li Coupon is valid for one-time use only
+                                                            li 123123
+                                .brand
+                                    .brand-image
+                                        img.cm-full-width(src='http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/banner/0502/jocom.jpg')
+                                        a.button(href='#/') Shop Now
+                                    .brand-content
+                                        .logo-hold
+                                            img.cm-logo(src='http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/logo/0502/jocom.png')
+                                        .discount-hold
+                                            span.bold.discount 40%
+                                            span.bold OFF
+                                            span Selected Items
+                                        .coupon-hold
+                                            .coupon-wrapper.red
+                                                .coupon
+                                                    .coupon-amount
+                                                        span.amount 50%
+                                                a.button(href='#/') Download\
+                                            .tnc-hold
+                                                .modal(data-title='Terms & Conditions')
+                                                    button T&C Apply
+                                                    .modal-content
+                                                        ul
+                                                            li 15% Bonus Coupon (min purchase RM1, max discount RM25)
+                                                            li Coupon is valid for one-time use only
+                                                            li 123123
+                                .brand
+                                    .brand-image
+                                        img.cm-full-width(src='http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/banner/0502/vivo.jpg')
+                                        a.button(href='#/') Shop Now
+                                    .brand-content
+                                        .logo-hold
+                                            img.cm-logo(src='http://image.prestomall.com/g3/md_img/promo/2018/05/DMM-7916-syioknya-raya/logo/0502/vivo.png')
+                                        .discount-hold
+                                            span.bold.discount 40%
+                                            span.bold OFF
+                                            span Selected Items
+                                        .coupon-hold
+                                            .coupon-wrapper.blue
+                                                .coupon
+                                                    .coupon-type Shipping Fee Coupon
+                                                    .coupon-amount
+                                                        span RM
+                                                        span.amount 50
+                                                a.button(href='#/') Download
+                                            .tnc-hold
+                                                .modal(data-title='Terms & Conditions')
+                                                    button T&C Apply
+                                                    .modal-content
+                                                        ul
+                                                            li 15% Bonus Coupon (min purchase RM1, max discount RM25)
+                                                            li Coupon is valid for one-time use only
+                                                            li 123123
+  
+        .fe-brandlogo-wrapper
+            .fe-brandlogo-holder
+                ul
+                    li
+                        +image('logo/888.jpg', '', '', 'img-fluid')
+                    li
+                        +image('logo/Claytan.jpg', '', '', 'img-fluid')
+                    li
+                        +image('logo/Coleman.jpg', '', '', 'img-fluid')
+                    li
+                        +image('logo/Dale&Cecil.jpg', '', '', 'img-fluid')
+                    li
+                        +image('logo/DryPro.jpg', '', '', 'img-fluid')
+                    li
+                        +image('logo/durex.jpg', '', '', 'img-fluid')
+                    li
+                        +image('logo/EuYanSang.jpg', '', '', 'img-fluid')
+                    li
+                        +image('logo/JEOEL.jpg', '', '', 'img-fluid')
+                    li
+                        +image('logo/Khind.jpg', '', '', 'img-fluid')
+                    li
+                        +image('logo/Kinohimitsu.jpg', '', '', 'img-fluid')
+                    li
+                        +image('logo/Nestle.jpg', '', '', 'img-fluid')
+                    li
+                        +image('logo/Panasonic.jpg', '', '', 'img-fluid')
+                    //- li
+                    //-     +image('', 'logo/TBM.jpg', '', 'img-fluid')
+                    //- li
+                    //-     +image('', 'logo/Unilever.jpg', '', 'img-fluid')
+    
+    .cm-row#couponStreet-section(data-ga-track="Coupon Street")
+        .fe-flashsale
+            .image-hold
+                a(href="#")
+                    +image('', 'StoreCart_Sayangi_Malaysia.gif', 'StoreCart_Sayangi_Malaysia-mobile.gif', '')
+
+
+
+
+    .cm-row#durianRuntuh-section(data-ga-track="Durian Runtuh")
+        .fe-title
+            +image('', 'durainruntuh_title.png', 'mw_durainruntuh_title.png', '')
+
+        .fe-durian-runtuh
+            .image-hold
+                a(href='#') 
+                    +image('', 'durianruntuh-desktop.gif', 'durianruntuh_mobile.gif', '')
+
+    
+    .cm-row(data-ga-track="Holiday Deals")
+        #holidayDeal-section
+            .fe-title
+                +image('', 'holidaydeals_title.png', 'mw_holidaydeals_title.png', '')
+
+            .fe-holiday-deal
+                .image-hold
+                    a(href='#/')
+                        +image('', 'holiday-deal-desktop.jpg', 'holiday-deal-mobile.jpg', '')
+
+        #themePark-section
+            .fe-themepark-main
+                .fe-title
+                    +image('', 'themepark_title.png', 'mw_themepark_title.png', '')
+
+                .fe-themepark-content-holder
+                    .themepark-wrapper
+                        .wrapper
+                            div.slick.slick-default.slick-custom(data-items=(device == "desktop") ? "4" : "2.5" , data-scroll=(device == "desktop") ? "4" : "2", data-spacing="10")
+                                include inc/components/product.jade
+    
+
+        #travelEssential-section.fe-travel-section
+            .fe-title
+                +image('', 'travel_title.png', 'mw_travel_title.png', '')
+
+
+            .fe-travel-main
+                .fe-travel-content-holder
+                    .travel-wrapper
+                        .wrapper
+                            div.slick.slick-default.slick-custom(data-items=(device == "desktop") ? "4" : "2.5" , data-scroll=(device == "desktop") ? "4" : "2", data-spacing="10")
+                                include inc/components/product.jade
+    
+
+
+    .cm-row#highlights-section(data-ga-track="Category Sale")
+        .fe-title
+            +image('', 'highlights_title.png', 'mw_highlights_title.png', '')
+
+        .fe-special-time
+            .special-wrapper
+                .special-category-card
+                    case device
+                        when 'desktop'
+                            include inc/components/card.jade
+                        when 'mobile'
+                            div.slick.slick-default(data-items=(device == "desktop") ? "2" : "2", data-scroll= (device == "desktop") ? "2" : "2" , data-spacing="5" data-rows=(device == "desktop") ? "2" : "3",   data-arrows='false' data-dots='true')
+                                include inc/components/card.jade
+
+
+
+    .cm-row(data-ga-track="Promotion")
+        .fe-banner
+            .fe-banner-wrapper2
+                .banner-sm
+                    .sm
+                        a(href='#')
+                            +image('shop-n-spin-banner.jpg', '', '', 'cm-full-width')
+                    .sm
+                        a(href='#/')
+                            +image('shoponapp-banner.jpg', '', '', 'cm-full-width')
+
+if device === "desktop"
+    include inc/components/sidebar.jade
+
+
+

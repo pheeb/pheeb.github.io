@@ -1,0 +1,17 @@
+mixin tabs(url, title, classes)
+    li.cm-tab-item(class=classes)
+        a(href="#" + url) #{title}
+div.cm-container
+    div.cm-row
+        div.cm-navbar
+            div.cm-tabs
+                ul.cm-tab-wrapper
+                    +tabs("1", "WOMEN FASHION", "")
+                    +tabs("2", "MEN FASHION", "")
+                    +tabs("3", "HEALTH & BEAUTY", "")
+                    +tabs("4", "MOBILE, IT & CAMERA", "")
+                    +tabs("5", "HOME ELECTRONICS", "")
+                    +tabs("6", "HOME & LIVING", "")
+                    +tabs("7", "SPORTS & AUTOMOTIVE", "")
+                    +tabs("8", "BABY, KIDS & TOYS", "")
+$

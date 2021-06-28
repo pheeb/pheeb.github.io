@@ -1,0 +1,52 @@
+@app-bg : #000;
+@app-title : #ffffff;
+@app-desc : #ffffff;
+
+@app-button-color : #ffffff;
+@app-button-active-color : #000;
+
+.cm-application-wrapper {
+    background-color: @app-bg;
+
+    .cm-app-title {
+        color: @app-title;
+    }
+
+    .cm-app-desc {
+        color: @app-desc;
+    }
+
+    .cm-form-wrapper {
+        margin-top: 10px;
+
+        form {
+
+            button {
+                color: @app-button-color;
+                padding: 10px 25px;
+                border: 2px solid @app-button-color;
+                border-radius: 10px;
+
+                &:hover {
+                    color: @app-button-active-color;
+                    border: 2px solid @app-button-active-color;
+                }
+            }
+
+        }
+    }
+
+    .cm-app-button {
+        a {
+            color: @app-button-color;
+            padding: 10px 25px;
+            border: 2px solid @app-button-color;
+            border-radius: 10px;
+
+            &:hover {
+                color: @app-button-active-color;
+                border: 2px solid @app-button-active-color;
+            }
+        }
+    }
+}

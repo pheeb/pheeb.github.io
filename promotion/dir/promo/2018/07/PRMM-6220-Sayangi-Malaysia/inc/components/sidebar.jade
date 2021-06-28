@@ -1,0 +1,22 @@
+mixin tabs(url, title, classes, img, img_hover, classesID, gaTrack)
+	li.cm-tab-item(id=classesID)
+		a(class=classes, href="#" + url, data-ga-track=gaTrack) 
+			div.title
+				span #{title}
+			img.original(src=imgPath + img)
+			img.hover(src=imgPath + img_hover)
+
+
+
+div.fe-tab-container
+	ul.cm-tab-wrapper
+		+tabs("faslDeal-section","Flash Deals Below RM 61","js-anchor", "right-nav-icon1.png", "right-nav-icon1-hover.png", "", "Flash Deals")
+		+tabs("exclusive-section","Exclusive Deals","js-anchor", "right-nav-icon2.png", "right-nav-icon2-hover.png", "", "Exclusive Deals")
+		+tabs("couponStreet-section","Coupon Street","js-anchor", "right-nav-icon3.png", "right-nav-icon3-hover.png", "", "Coupon Street")
+		+tabs("bransale-section","Brand Sales","js-anchor", "right-nav-icon4.png", "right-nav-icon4-hover.png", "", "Brand Sale")
+		+tabs("durianRuntuh-section","Durian Runtuh Game","js-anchor", "right-nav-icon5.png", "right-nav-icon5-hover.png", "", "Durian Runtuh")
+		+tabs("holidayDeal-section","Holiday Deals","js-anchor", "right-nav-icon6.png", "right-nav-icon6-hover.png", "", "Holiday Deals")
+		+tabs("themePark-section","Themepark and Ticket","js-anchor", "right-nav-icon7.png", "right-nav-icon7-hover.png", "", "Holiday Deals")
+		+tabs("travelEssential-section","Travel Essential","js-anchor", "right-nav-icon8.png", "right-nav-icon8-hover.png", "", "Holiday Deals")
+		+tabs("highlights-section","Highlights","js-anchor", "right-nav-icon9.png", "right-nav-icon9-hover.png", "Promotion", "Category Sale")
+		+tabs("","Back to Top","scrollTop", "right-nav-icon10.png", "right-nav-icon10-hover.png", "scrollTop")
