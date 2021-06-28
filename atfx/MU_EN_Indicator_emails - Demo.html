@@ -1,0 +1,943 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+  <head>
+    <!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+    <title>ATFX</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0 " name="viewport" />
+    <meta content="telephone=no" name="format-detection" />
+    <!--[if !mso]><!-->
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900" rel="stylesheet" />
+    <!--<![endif]-->
+    <style type="text/css">
+     body {
+          margin: 0 !important;
+          padding: 0 !important;
+          -webkit-text-size-adjust: 100% !important;
+          -ms-text-size-adjust: 100% !important;
+          -webkit-font-smoothing: antialiased !important;
+        }
+        img {
+          border: 0 !important;
+          outline: none !important;
+        }
+        p {
+          Margin: 0px !important;
+          Padding: 0px !important;
+        }
+        table {
+          border-collapse: collapse;
+          mso-table-lspace: 0px;
+          mso-table-rspace: 0px;
+        }
+        td, a, span {
+          border-collapse: collapse;
+          mso-line-height-rule: exactly;
+          
+        }
+        span.MsoHyperlink {
+            mso-style-priority:99;
+            color:inherit;
+        }
+        span.MsoHyperlinkFollowed {
+            mso-style-priority:99;
+            color:inherit;
+        }
+
+        .ExternalClass * {
+          line-height: 100%;
+        }
+        .em_defaultlink a {
+          color: inherit !important;
+          text-decoration: none !important;
+        }
+        .em_black a {
+          color: #000000;
+          text-decoration: none;
+        }
+        .em_white a {
+          color: #ffffff;
+          text-decoration: none;
+        }
+        .em_grey a {
+          color: #CBCCCE;
+          text-decoration: none;
+        }
+        .em_grey1 a {
+          color: #E7E9ED;
+          text-decoration: none;
+        }
+        .em_grey2 a {
+          color: #4e4e50;
+          text-decoration: none;
+        }
+        .em_blue a {
+          color: #0F2C52;
+          text-decoration: none;
+        }
+        .em_saf a {
+          color: #f06a2d;
+          text-decoration:none;
+          }
+        .orange_text{
+          color: #f25e1c !important;
+        }
+        
+        .em_text1{
+          font-size:16px !important;
+          /*line-height:125% !important;*/
+        }
+        .em_text2{
+          font-size:14px !important;
+          /*line-height:125% !important;*/
+        }
+        a {text-decoration: none;}
+
+        @media only screen and (min-width:481px) and (max-width:599px) {
+        .em_main_table {
+          width: 100% !important;
+        }
+        .em_wrapper {
+          width: 100% !important;
+        }
+        .em_wrapper2 {
+            width: 40% !important;
+        }
+        .em_wrapper3 {
+            width: 75% !important;
+        }
+        .em_side {
+          width: 10px !important;
+        }
+        .em_hide {
+          display: none !important;
+        }
+        .em_img {
+          width: 100% !important;
+          height: auto !important;
+          max-width: none !important;
+        }
+        .em_img1 {
+          width: 100% !important;
+          height: auto !important;
+        }
+        .em_height {
+          height: 20px !important;
+        }
+        .em_height10 {
+            height: 10px !important;
+        }
+        .em_height1 {
+          height: 30px !important;
+        }
+        .em_height2 {
+          height: 40px !important;
+        }
+        .em_pad30 {
+          padding: 0px 30px !important;
+        }
+        .em_side15 {
+          width: 15px !important;
+        }
+        .em_pad30 {
+          padding: 0px 30px !important;
+        }
+        .em_pad15 {
+          padding: 0px 15px !important;
+        }
+        .em_center {
+          text-align: center !important;
+        }
+        .em_br {
+          display: block !important;
+        }
+        .em_pad {
+          padding: 0px 10px !important;
+        }
+        .em_pad_top {
+          padding-top: 30px !important;
+        }
+        .em_pad_top1 {
+          padding-top: 20px !important;
+        }
+        .em_pad_top2 {
+          padding-top: 10px !important;
+        }
+        .em_pa_none {
+          padding: 0px !important;
+        }
+        .em_bottom {
+          padding-bottom: 20px !important;
+        }
+        .em_bottom10 {
+            padding-bottom: 10px !important;
+        }
+        .em_bottom20 {
+            padding-bottom: 20px !important;
+        }
+        .em_bottom30 {
+            padding-bottom: 30px !important;
+        }
+        .em_font_18{
+          font-size:18px !important;
+          line-height: 26px !important;
+        }
+        .em_w150{
+          width:150px !important;
+        }
+        .hide_480 { display: none !important; }
+        .hide_desktop{
+            display: table !important;
+            float: none !important;
+            width: 100% !important;
+            overflow: visible !important;
+            height: auto !important;
+        }    
+        }
+        
+        @media screen and (max-width: 480px) {
+        .hide_480 { display: none !important; }
+        .hide_desktop{
+            display: table !important;
+            float: none !important;
+            width: 100% !important;
+            overflow: visible !important;
+            height: auto !important;
+        }     
+        .em_main_table {
+          width: 100% !important;
+        }
+        .em_wrapper {
+          width: 100% !important;
+        }
+        .em_wrapper2 {
+            width: 55% !important;
+        }
+        .em_wrapper3 {
+            width: 100% !important;
+        }
+        .em_side {
+          width: 10px !important;
+        }
+        .em_hide {
+          display: none !important;
+        }
+        .em_img {
+          width: 100% !important;
+          height: auto !important;
+          max-width: none !important;
+        }
+        .em_img1 {
+          width: 100% !important;
+          height: auto !important;
+        }
+        .em_height {
+          height: 20px !important;
+        }
+        .em_height1 {
+          height: 30px !important;
+        }
+        .em_height10 {
+            height: 10px !important;
+        }
+        .em_height2 {
+          height: 40px !important;
+        }
+        u + .em_body .em_full_wrap {
+          width: 100% !important;
+          width: 100vw !important;
+        }
+        .em_side30 {
+          width: 30px !important;
+        }
+        .em_side15 {
+          width: 15px !important;
+        }
+        .em_img22 {
+          width: 30px !important;
+          height: auto !important;
+        }
+        .em_w4 {
+          width: 6px !important;
+        }
+        .em_h15 {
+          height: 25px !important;
+        }
+        .em_h22 {
+          height: 22px !important;
+          width: 60px !important;
+        }
+        .em_pad30 {
+          padding: 0px 30px !important;
+        }
+        .em_pad15 {
+          padding: 0px 15px !important;
+        }
+        .em_center {
+          text-align: center !important;
+        }
+        .em_br {
+          display: block !important;
+        }
+        .em_pad {
+          padding: 0px 10px !important;
+        }
+        .em_pad_top {
+          padding-top: 30px !important;
+        }
+        .em_pad_top1 {
+          padding-top: 20px !important;
+        }
+        .em_pad_top2 {
+          padding-top: 10px !important;
+        }
+        .em_pa_none {
+          padding: 0px !important;
+        }
+        .em_width_20 {
+          width:20px !important;
+        }
+        .em_font_14 {
+          font-size:14px !important;
+        }
+        .em_bottom {
+          padding-bottom: 20px !important;
+        }
+        .em_bottom30 {
+            padding-bottom: 30px !important;
+        }
+        .em_bottom20 {
+            padding-bottom: 20px !important;
+        }
+        .em_bottom10 {
+            padding-bottom: 10px !important;
+        }
+        .em_font_18{
+          font-size:18px !important;
+          line-height: 26px !important;
+        }
+
+        }    
+      </style>
+  </head>
+  <body bgcolor="#f5f5f5" class="em_body" style="margin:0px; padding:0px;">
+        <table bgcolor="#f5f5f5" border="0" cellpadding="0" cellspacing="0" class="em_full_wrap" width="100%">
+    <tbody>
+        <tr>
+            <td align="center" valign="top">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_main_table" style="width:600px;" width="600">
+                    <tbody>
+                        <tr>
+                            <td bgcolor="#e5e5e5" style="width:1px;" width="1"><img alt=" " border="0" height="1" src="https://www.atfx.com/edm/images/01162019/spacer.gif" style="display:block;" width="1" /></td>
+                            <td align="center" valign="top">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="width:598px;" width="598">
+                                    <tbody>
+                                        <tr>
+                                            <td bgcolor="#e5e5e5" height="1" style="line-height:0px; font-size:0px;"><img alt=" " border="0" height="1" src="https://www.atfx.com/edm/images/01162019/spacer.gif" style="display:block;" width="1" /></td>
+                                        </tr>
+                                        <!--  Logo Section Start Here -->
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="width: 598px;" width="598">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="center" bgcolor="#ffffff" valign="top">
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="width: 598px;" width="598">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="em_side" style="width: 234px;" width="234">&nbsp;</td>
+                                                                            <td align="center" valign="top">
+                                                                                <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="width: 130px;" width="130">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td class="em_h20" height="23" style="height: 23px; line-height: 0px; font-size: 0px;">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top"><a href="https://www.atfx.com/int/en/?utm_source=email&utm_medium=edm&utm_campaign=int_email_LATAM_Indicator_announcement_30Dec20_en_organic" style="text-decoration: none; color: #ffffff;" target="_blank"><img alt="ATFX" border="0" height="41" src="https://www.atfx.com/edm/images/01162019/header_logo.png" style="display: block; max-width: 130px; font-family: Arial, sans-serif; font-size: 15px; line-height: 18px; color: #0f2c52;" width="130" /></a></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td class="em_h20" height="23" style="height: 23px; line-height: 0px; font-size: 0px;">&nbsp;</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                            <td class="em_side" style="width: 234px;" width="234">&nbsp;</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!--  Logo Section End Here -->
+                                        <!-- Body Content Section Start Here -->
+                                        <tr>
+                                            <td align="center" valign="top">
+                                              <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="width: 598px;" width="598">
+                                                  <tbody>
+                                                      <tr>
+                                                          <td align="center" valign="top">
+                                                              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                <tr>
+                                                                  <td><img alt="This will change the way you trade" class="em_img1 hide_480" src="https://www.atfx.com/hubfs/edm/images/2020/1230_LATAM_ATFX_indicator/ATFX_Indicator_email_desktop_EN@2x.jpg" width="598" height="243" style="display:block; max-width: 598px;" border="0"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="hide_desktop" style="display:none; width:0;overflow:hidden; max-height:0px !important;"><img alt="This will change the way you trade" border="0" class="em_img1" src="https://www.atfx.com/hubfs/edm/images/2020/1230_LATAM_ATFX_indicator/ATFX_Indicator_email_mobile_EN@2x.jpg" style="display: block;"/></td>
+                                                                </tr>     
+                                                              </table>
+                                                          </td>
+                                                      </tr>
+                                                  </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <td align="center" valign="top">
+                                                <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="width: 598px;" width="598">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td align="left" class="em_pad30" style="padding:0px 40px;" valign="top">
+                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="em_wrapper">
+                                                                    <tbody>
+                                                                   
+                                                                      
+                                                                      <tr>
+                                                                          <td height="40">&nbsp;</td>
+                                                                      </tr>
+                                                                      
+                                                                      <tr>
+                                                                          <td style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color: #10243E; line-height: 22px; text-align: center;">
+                                                                           Most people take courses to learn how to trade. But most of the time, there is no ongoing education, and more importantly, no examples of real-time implementation of the trading strategy. That’s why most people don’t know when to buy or short-sell, and therefore 75% of traders lose money.
+
+                                                                          </td>
+                                                                      </tr>
+                                                                      
+                                                                      <tr>
+                                                                          <td height="40"></td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 22px; font-weight: bold; text-align:center;  padding-bottom: 30px; color:#10243E;">
+                                                                           Are you struggling on:
+                                                                        </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td align="center" valign="top" style="padding-left: 20px; padding-right: 20px;">
+                                                                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                <tr>
+                                                                                  <td>
+                                                                                      <table align="left" width="218" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+                                                                                        <tbody>
+                                                                                          <tr>
+                                                                                            <td width="5" valign="top" align="left" style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 16px; color: #F2672A; line-height: 22px;">•</td>
+                                                                                            <td width="10" style="width: 10px;"></td>
+                                                                                            <td class="" valign="top" align="left" style="font-family: Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color:#10243E; line-height: 22px;">Knowing when to buy or short-sell?</td>
+                                                                                           </tr>
+                                                                                          <tr><td colspan="3" height="15" class="em_height10">&nbsp;</td></tr>
+                                                                                          <tr>
+                                                                                            <td width="5" valign="top" align="left" style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 16px; color: #F2672A; line-height: 22px;">•</td>
+                                                                                            <td width="10" style="width: 10px;"></td>
+                                                                                            <td valign="top" align="left" style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color:#10243E; line-height: 22px;">Where to place stops orders?</td>
+                                                                                         </tr>
+                                                                                         <tr><td colspan="3" class="em_bottom10 hide_desktop" style="display:none; width:0;overflow:hidden; max-height:0px !important;">&nbsp;</td></tr>
+                                                                                        </tbody>
+                                                                                       </table>
+                                                                                       <!--[if gte mso 9]></td><td valign="top"><![endif]-->
+                                                                                        
+                                                                                      
+                                                                                       <table align="right" width="210" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+                                                                                         <tbody>
+                                                                                            <tr>
+                                                                                                <td width="5" valign="top" align="left" style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 16px; color: #F2672A; line-height: 22px;">•</td>
+                                                                                                <td width="10" style="width: 10px;"></td>
+                                                                                                <td class="" valign="top" align="left" style="font-family: Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color: #10243E; line-height: 22px;">Where to place take profit orders?</td>
+                                                                                            </tr>
+                                                                                            <tr><td colspan="3" height="15" class="em_height10">&nbsp;</td></tr>
+                                                                                            <tr>
+                                                                                                <td width="5" valign="top" align="left" style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 16px; color: #F2672A; line-height: 22px;">•</td>
+                                                                                                <td width="10" style="width: 10px;"></td>
+                                                                                                <td class="" valign="top" align="left" style="font-family: Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color: #10243E; line-height: 22px;">How much to risk per trade?</td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                       </table>
+                                                                                  </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                      </tr>
+                                                                     <tr>
+                                                                        <td height="40"></td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                         <td bgcolor="#F0F0F0" height="1" style="width: 100%; height: 1px; line-height:0px; font-size:0px;" width="100%"><img alt="" border="0" height="1" src="https://www.atfx.com/edm/images/01162019/spacer.gif" style="display: block;" width="1"></td>
+                                                                      </tr>
+                                                                       <tr>
+                                                                        <td height="40"></td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                          <td style="font-family: Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color: #10243E; line-height: 22px; font-weight: bold; text-align:center;">
+                                                                           Here ATFX comes in and offers a solution for all type of traders:
+                                                                          </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td height="20"></td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color: #10243E; line-height: 22px; text-align:center;">
+                                                                          The ATFX Support and Resistance indicator will solve the problem of ongoing education. It will show you how the trading system is implemented to the live markets so that you don’t need to second guess how to read the markets, or how to implement the strategy. The indicator updates daily.
+                                                                        </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td height="40"></td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                          <td style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color: #10243E; line-height: 22px; text-align: center; font-weight: bold;">
+                                                                          Download the ATFX Indicator and get:
+
+                                                                          </td>
+                                                                      </tr>
+                                                                      <tr><td height="30"></td></tr>
+                                                                      <tr>
+                                                                        <td align="center" valign="top" class="em_pad15">
+                                                                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                <tr>
+                                                                                  <td>
+                                                                                      <table align="left" width="238" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+                                                                                        <tbody>
+                                                                                          <tr>
+                                                                                            <td width="5" valign="top" align="left" style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 16px; color: #F2672A; line-height: 22px;">•</td>
+                                                                                            <td width="10" style="width: 10px;"></td>
+                                                                                            <td class="" valign="top" align="left" style="font-family: Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color:#10243E; line-height: 22px;">A complete short-term trading system ready to be implemented</td>
+                                                                                           </tr>
+                                                                                          <tr><td colspan="3" height="15" class="em_height10">&nbsp;</td></tr>
+                                                                                          <tr>
+                                                                                            <td width="5" valign="top" align="left" style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 16px; color: #F2672A; line-height: 22px;">•</td>
+                                                                                            <td width="10" style="width: 10px;"></td>
+                                                                                            <td valign="top" align="left" style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color:#10243E; line-height: 22px;">Ease of mind when trading as you get continuous trading support</td>
+                                                                                         </tr>
+                                                                                         <tr><td colspan="3" class="em_bottom10 hide_desktop" style="display:none; width:0;overflow:hidden; max-height:0px !important;">&nbsp;</td></tr>
+                                                                                        </tbody>
+                                                                                       </table>
+                                                                                       <!--[if gte mso 9]></td><td valign="top"><![endif]-->
+                                                                                        
+                                                                                      
+                                                                                       <table align="right" width="244" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+                                                                                         <tbody>
+                                                                                            <tr>
+                                                                                                <td width="5" valign="top" align="left" style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 16px; color: #F2672A; line-height: 22px;">•</td>
+                                                                                                <td width="10" style="width: 10px;"></td>
+                                                                                                <td class="" valign="top" align="left" style="font-family: Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color: #10243E; line-height: 22px;">Clear entry and exit levels plotted on your MT4 chart, updated daily</td>
+                                                                                            </tr>
+                                                                                            <tr><td colspan="3" height="15" class="em_height10">&nbsp;</td></tr>
+                                                                                            <tr>
+                                                                                                <td width="5" valign="top" align="left" style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 16px; color: #F2672A; line-height: 22px;">•</td>
+                                                                                                <td width="10" style="width: 10px;"></td>
+                                                                                                <td class="" valign="top" align="left" style="font-family: Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color: #10243E; line-height: 22px;">A video that explains the system so you don't have to second guess</td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                       </table>
+                                                                                  </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td height="40"></td>
+                                                                      </tr>
+                                                                      <!--Button START HERE-->
+                                                                      <tr>
+                                                                          <td align="center" valign="top">
+                                                                              <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="em_wrapper3">
+                                                                                  <tbody>
+                                                                                  <tr>
+                                                                                        <td>
+                                                                                          
+                                                                                          <table align="center" width="316" border="0" cellspacing="0" cellpadding="0" bgcolor="#F2672A" class="em_wrapper">
+                                                                                                  <tbody>
+                                                                                                      
+                                                                                                      <tr>
+                                                                                                          <td align="center" valign="top" style="font-size:0px; line-height:0px;">
+                                                                                                              <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+                                                                                                                  <tbody>
+                                                                                                                      <tr>
+                                                                                                                          <td width="4" align="right" valign="top" style="font-size:0px; line-height:0px;"><img src="https://www.atfx.com/edm/images/04252019-IB-contest/curv1.jpg" width="4" alt="" style="display: block; max-width: 4px;" border="0"></td>
+                                                                                                                          <td style="font-size:0px; line-height:0px;" height="4">&nbsp;</td>
+                                                                                                                          <td width="4" align="left" valign="top" style="font-size:0px; line-height:0px;"><img src="https://www.atfx.com/edm/images/04252019-IB-contest/curv2.jpg" width="4" alt="" style="display: block; max-width: 4px;" border="0"></td>
+                                                                                                                      </tr>
+                                                                                                                  </tbody>
+                                                                                                              </table>
+                                                                                                          </td>
+                                                                                                      </tr>
+                                                                                                      <tr>
+                                                                                                          <td align="center" valign="middle" style="font-family: Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color: #ffffff; line-height: 18px;font-weight:600; text-align:center; font-weight: bold; height:44px;"><a href="https://www.atfx.com/hubfs/6693213/ATFX.COM/download/support_resistance_v_1_0.exe" target="_blank" style="text-decoration:none; text-transform:uppercase; color:#ffffff;">Download ATFX Indicator</a></td>
+                                                                                                      </tr>
+                                                                                                      <tr>
+                                                                                                          <td align="center" valign="top">
+                                                                                                              <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+                                                                                                                  <tbody>
+                                                                                                                      <tr>
+                                                                                                                          <td width="4" align="right" valign="bottom" style="font-size:0px; line-height:0px;"><img src="https://www.atfx.com/edm/images/04252019-IB-contest/curv4.jpg" width="4" alt="" style="display: block; max-width: 4px;" border="0"></td>
+                                                                                                                          <td style="font-size:0px; line-height:0px;" height="4">
+                                                                                                                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                                                  <tbody>
+                                                                                                                                      <tr>
+                                                                                                                                          <td height="3" style="font-size:0px; line-height:0px;">&nbsp;</td>
+                                                                                                                                      </tr>
+                                                                                                                                      <tr>
+                                                                                                                                          <td height="1" style="font-size:0px; line-height:0px;" bgcolor="#d85c3a">&nbsp;</td>
+                                                                                                                                      </tr>
+                                                                                                                                  </tbody>
+                                                                                                                              </table>
+                                                                                                                          </td>
+                                                                                                                          <td width="4" align="left" valign="bottom" style="font-size:0px; line-height:0px;"><img src="https://www.atfx.com/edm/images/04252019-IB-contest/curv3.jpg" width="4" alt="" style="display: block; max-width: 4px;" border="0"></td>
+                                                                                                                      </tr>
+                                                                                                                  </tbody>
+                                                                                                              </table>
+                                                                                                          </td>
+                                                                                                      </tr>
+                                    
+                                                                                                  </tbody>
+                                                                                          </table>
+                                                                                        </td>
+                                                                                   </tr>
+                                                                                  </tbody>
+                                                                              </table>
+                                                                          </td>
+                                                                      </tr>
+                                                                       <!--Button END HERE-->
+                                                                       <tr>
+                                                                        <td height="40"></td>
+                                                                      </tr>
+
+                                                                      
+                                                                      <tr>
+                                                                          <td style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color: #10243E; line-height: 22px; font-weight: bold; text-align: center;">
+                                                                            How to install and use our indicator:
+                                                                          </td>
+                                                                      </tr>
+                                                                      <tr><td height="20"></td></tr>
+                                                                     
+                  
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                              <td align="center" valign="top">
+                                                  <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="width: 598px;" width="598">
+                                                      <tbody>
+                                                          <tr>
+                                                             <td align="center" class="em_pa_none" style="padding:0px 40px;" valign="top">
+                                                              <a href="https://youtu.be/06XzHBDdulA" target="_blank"><img alt="Watch Video" class="em_img1" src="https://www.atfx.com/hubfs/edm/images/2020/1230_LATAM_ATFX_indicator/ATFX_Indicator_email_video@2x.jpg" style="display:block;" width="520" height="274" border="0"></a></td> 
+                                                          </tr>
+                                                      </tbody>
+                                                  </table>
+                                              </td>
+                                        </tr>
+                                        <tr>
+                                                <td valign="top" align="center">
+                                                    <table class="em_wrapper" style="width: 598px;" width="598" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="em_pad30" style="padding:0px 30px;" valign="top" align="center">
+                                                                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                                      <tr><td height="40"></td></tr>
+                                                                      <tr><td style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color: #10243E; line-height: 22px; text-align: center;">Create a live account today and <span style="font-weight: bold;">get full access to ATFX Indicator</span>.</td></tr>
+                                                                      <tr><td height="20"></td></tr>
+                                                                      <tr>
+                                                                        <td align="center" bgcolor="#ffffff">
+                                                                          <table align="center" width="264" border="0" cellspacing="0" cellpadding="0" class="em_wrapper3">
+                                                                              <tbody>
+                                                                                  <tr>
+                                                                                      <td>
+                                                                                          <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#0f2c52">
+                                                                                              <tbody>
+                                                                                                  <tr>
+                                                                                                      <td align="center" valign="top" style="font-size:0px; line-height:0px;">
+                                                                                                          <table align="center" width="264" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+                                                                                                              <tbody>
+                                                                                                                  <tr>
+                                                                                                                      <td width="4" align="right" valign="top" style="font-size:0px; line-height:0px;"><img src="https://www.atfx.com/edm/images/01162019/curv11.jpg" width="4" alt="" style="display: block; max-width: 4px;" border="0"></td>
+                                                                                                                      <td style="font-size:0px; line-height:0px;" height="4">&nbsp;</td>
+                                                                                                                      <td width="4" align="left" valign="top" style="font-size:0px; line-height:0px;"><img src="https://www.atfx.com/edm/images/01162019/curv22.jpg" width="4" alt="" style="display: block; max-width: 4px;" border="0"></td>
+                                                                                                                  </tr>
+                                                                                                              </tbody>
+                                                                                                          </table>
+                                                                                                      </td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td align="center" class="em_font_15" valign="middle" style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color: #ffffff; font-weight:600; font-weight:bold; text-align:center;">
+                                                                                                        <!--[if gte mso 9]>
+                                                                                                          <table border="0" cellspacing="0" cellpadding="0" style="width:264px;">
+                                                                                                          <tr>
+                                                                                                          <td align="center" style="padding:5px 0px;" bgcolor="#0F2C52" valign="top">
+                                                                                                          <![endif]-->
+
+                                                                                                        <a href="https://apply-int.atfx.com/?utm_source=email&utm_medium=edm&utm_campaign=int_email_LATAM_Indicator_announcement_30Dec20_en_organic" target="_blank" style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: bold; text-decoration:none;color:#ffffff; text-transform:uppercase; display:block; mso-height-rule: exactly; text-align: center; border-top: 13px solid #0F2C52; border-bottom: 13px solid #0F2C52; line-height: 18px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create live account&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                                                                                        <!--[if gte mso 9]>
+                                                                                                          </td>
+                                                                                                          </tr>
+                                                                                                          </table>
+                                                                                                          <![endif]-->
+                                                                                                      </td>
+                                                                                                  </tr>
+                                                                                                  <!-- <tr>
+                                                                                                      <td class="em_grey" valign="middle" align="center" style="font-family: Helvetica, Arial, sans-serif; font-size: 15px; color: #FFFFFF; height:46px; font-weight:bold;"><a href="https://www.chinese-atfx.com/forex-introducing-broker-program/?utm_source=atfxgm.edm&amp;utm_medium=media_buy_edm&amp;utm_campaign=CN_Media_Buy_Display_atfxedm_IB&amp;utm_term=edmgm&amp;utm_content=edmgm" target="_blank" style="color: #FFFFFF; text-decoration:none; display:block; line-height:46px;">了解详情</a></td>
+                                                                                                  </tr> -->
+                                                                                                  <tr>
+                                                                                                      <td align="center" valign="top">
+                                                                                                          <table align="center" width="264" border="0" cellspacing="0" cellpadding="0" class="em_wrapper">
+                                                                                                              <tbody>
+                                                                                                                  <tr>
+                                                                                                                      <td width="4" align="right" valign="bottom" style="font-size:0px; line-height:0px;"><img src="https://www.atfx.com/edm/images/01162019/curv33.jpg" width="4" alt="" style="display: block; max-width: 4px;" border="0"></td>
+                                                                                                                      <td style="font-size:0px; line-height:0px;" height="4">
+                                                                                                                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                                                                              <tbody>
+                                                                                                                                  <tr>
+                                                                                                                                      <td height="3" style="font-size:0px; line-height:0px;">&nbsp;</td>
+                                                                                                                                  </tr>
+                                                                                                                                  <tr>
+                                                                                                                                      <td height="1" style="font-size:0px; line-height:0px;" bgcolor="#081933">&nbsp;</td>
+                                                                                                                                  </tr>
+                                                                                                                              </tbody>
+                                                                                                                          </table>
+                                                                                                                      </td>
+                                                                                                                      <td width="4" align="left" valign="bottom" style="font-size:0px; line-height:0px;"><img src="https://www.atfx.com/edm/images/01162019/curv44.jpg" width="4" alt="" style="display: block; max-width: 4px;" border="0"></td>
+                                                                                                                  </tr>
+                                                                                                              </tbody>
+                                                                                                          </table>
+                                                                                                      </td>
+                                                                                                  </tr>
+                                                                                              </tbody>
+                                                                                          </table>
+                                                                                      </td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                     <td height="40"></td>
+                                                                                  </tr>
+                                                                              </tbody>
+                                                                          </table>
+                                                                        </td>
+                                                                      </tr>
+                                                                      <tr><td style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; color: #10243E; line-height: 22px; font-weight: bold; text-align: center;">Join our Telegram channel to get daily free trading signals and speak to our team members as well as other traders, share &amp; discuss trading ideas.</td></tr>
+                                                                      <tr><td height="20"></td></tr>
+                                                                      <tr>
+                                                                        <td align="center" style="padding-top:0px;">
+                                                                          <table class="em_wrapper3" border="0" cellpadding="0" cellspacing="0" style="border-collapse:separate!important; background-color:#ffffff;border-radius:4px;">
+                                                                              <tbody>
+                                                                                  <tr>
+                                                                                      <td align="center" style="border:1px solid #0F2C52; border-radius:4px;" valign="top"><!--[if gte mso 9]>
+                                                                              <table border="0" cellspacing="0" cellpadding="0" style="width:250px;">
+                                                                              <tr>
+                                                                              <td align="center" style="padding:10px 0px;" bgcolor="#ffffff" valign="top">
+                                                                              <![endif]--><a class="button" href="https://t.me/joinchat/AAAAAFduvGrWFjbxgkPbhQ" style="background-color: #ffffff; border-collapse: separate!important; border-top: 13px solid #ffffff; border-right: 44px solid #ffffff; border-bottom: 13px solid #ffffff; border-left: 44px solid #ffffff; color: #0F2C52; display: inline-block; font-family: Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: bold; text-align: center; text-decoration: none; text-transform: uppercase;" target="_blank">Join atfx telegram</a> <!--[if gte mso 9]>
+                                                                              </td>
+                                                                              </tr>
+                                                                              </table>
+                                                                              <![endif]--></td>
+                                                                                  </tr>
+                                                                              </tbody>
+                                                                          </table>
+                                                                        </td>
+                                                                       </tr>
+                                                                       <tr><td height="40"></td></tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                         </tr>
+                                         <tr>
+                                              <td align="center" valign="top">
+                                                  <table align="center" bgcolor="#eeeeee" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="width: 598px;" width="598">
+                                                      <tbody>
+                                                          <tr>
+                                                              <td align="center" class="em_pad30" style="padding:0px 40px;" valign="top">
+                                                                  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                      <tbody>
+                                                                        <tr>
+                                                                            <td height="30">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                        <td class="em_bottom20" style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 15px; font-weight: bold; padding-bottom: 15px; color:#10243E;">
+                                                                          Have questions?
+                                                                        </td>
+                                                                      </tr>
+                                                                        <tr>
+                                                                            <td style="font-family:Helvetica Neue LT Std, Helvetica, Arial, sans-serif; font-size: 13px; color: #10243E; line-height: 20px; text-align:left;">
+                                                                              If you have any questions and want to learn more about the ATFX Indicator, please don't hesitate to email us at  <a href="mailto:cs.intl@atfxgm.com" style="color:#10243E; text-decoration: underline;">cs.intl@atfxgm.com</a> or contact us at <span style="font-weight: bold;">+52 (55) 2881 6852</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        
+                                                                        <tr>
+                                                                            <td height="30">&nbsp;</td>
+                                                                        </tr>
+                                                                      </tbody>
+                                                                  </table>
+                                                              </td>
+                                                          </tr>
+                                                      </tbody>
+                                                  </table>
+                                              </td>
+                                          </tr>
+                                        <!-- Body Content Section End Here -->
+                                        <!-- Footer Section Start Here -->
+                                        <tr>
+                                            <td align="center" bgcolor="#24282d" valign="top">
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="width: 598px;" width="598">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="em_hide" style="width: 39px;" width="39">&nbsp;</td>
+                                                            <td align="center" class="em_pad30" valign="top">
+                                                                <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="width: 520px;" width="520">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="em_height1" height="29" style="height: 29px;">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="center" valign="top">
+                                                                                <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="width: 520px;" width="520">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td align="center" valign="top">
+                                                                                                <table align="left" border="0" cellpadding="0" cellspacing="0" class="em_wrapper" style="width: 125px;" width="125">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td align="center" valign="top"><a href="https://www.atfx.com/int/en/?utm_source=email&utm_medium=edm&utm_campaign=int_email_LATAM_Indicator_announcement_30Dec20_en_organic" style="text-decoration: none; color:#24282d;" target="_blank"><img alt="ATFX" border="0" height="42" src="https://www.atfx.com/edm/images/01162019/footer_logo.jpg" style="display: block; max-width: 125px; font-family: Arial, sans-serif; font-size: 16px; line-height: 30px; color:#24282d;" width="125" /></a></td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                                <!--[if gte mso 9]></td><td valign="top"><![endif]-->
+                                                                                                <table align="right" border="0" cellpadding="0" cellspacing="0" class="em_wrapper">
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td class="em_height1" height="4" style="height: 4px; line-height: 0px; font-size: 0px;">&nbsp;</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td align="center" valign="top">
+                                                                                                                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                                                                                                    <tbody>
+                                                                                                                        <tr>
+                                                                                                                            <td align="left" class="em_grey1 em_h22" height="31" style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; color: #E7E9ED;" valign="middle" width="70">Follow Us</td>
+                                                                                                                            <td align="center" valign="top">
+                                                                                                                                <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 1px;" width="1">
+                                                                                                                                    <tbody>
+                                                                                                                                        <tr>
+                                                                                                                                            <td height="5" style="height: 5px; line-height: 0px; font-size: 0px;"><img alt="" border="0" height="1" src="https://www.atfx.com/edm/images/01162019/spacer.gif" style="display: block;"
+                                                                                                                                                    width="1" /></td>
+                                                                                                                                        </tr>
+                                                                                                                                        <tr>
+                                                                                                                                            <td bgcolor="#3b4148" class="em_h15" height="21" style="width: 1px; height: 21px; line-height:0px; font-size:0px;" width="1"><img alt="" border="0" height="1" src="https://www.atfx.com/edm/images/01162019/spacer.gif" style="display: block;"
+                                                                                                                                                    width="1" /></td>
+                                                                                                                                        </tr>
+                                                                                                                                        <tr>
+                                                                                                                                            <td height="5" style="height: 5px; line-height: 0px; font-size: 0px;"><img alt="" border="0" height="1" src="https://www.atfx.com/edm/images/01162019/spacer.gif" style="display: block;"
+                                                                                                                                                    width="1" /></td>
+                                                                                                                                        </tr>
+                                                                                                                                    </tbody>
+                                                                                                                                </table>
+                                                                                                                            </td>
+                                                                                                                            <td style="width: 10px;" width="10">&nbsp;</td>
+                                                                                                                            <td class="em_hide" style="width: 10px;" width="10">&nbsp;</td>
+                                                                                                                            <td align="center" valign="top"><a href="https://www.facebook.com/ATFXLatam/" style="text-decoration: none; color: #ffffff;" target="_blank"><img alt="fb" border="0" class="em_img22" height="34" src="https://www.atfx.com/edm/images/01162019/facebook_image.png" style="display: block; max-width: 34px; font-family: Arial, sans-serif; font-size: 14px; line-height: 30px; color: #ffffff;" width="34" /></a></td>
+                                                                                                                            <td class="em_w4" style="width: 9px;" width="9">&nbsp;</td>
+                                                                                                                            <td align="center" valign="top"><a href="https://www.instagram.com/atfx_global" style="text-decoration: none; color: #ffffff;" target="_blank"><img alt="insta" border="0" class="em_img22" height="34" src="https://www.atfx.com/edm/images/01162019/insta_image.png" style="display: block; max-width: 34px; font-family: Arial, sans-serif; font-size: 14px; line-height: 30px; color: #ffffff;" width="34" /></a></td>
+                                                                                                                            <td class="em_w4" style="width: 9px;" width="9">&nbsp;</td>
+                                                                                                                            <td align="center" valign="top"><a href="https://twitter.com/ATFX_Global" style="text-decoration: none; color: #ffffff;" target="_blank"><img alt="tw" border="0" class="em_img22" height="34" src="https://www.atfx.com/edm/images/01162019/twitter_image.png" style="display: block; max-width: 34px; font-family: Arial, sans-serif; font-size: 14px; line-height: 30px; color: #ffffff;" width="34" /></a></td>
+                                                                                                                            <td class="em_w4" style="width: 9px;" width="9">&nbsp;</td>
+                                                                                                                            <td align="center" valign="top"><a href="https://www.linkedin.com/company/atfx-latam/" style="text-decoration: none; color: #ffffff;" target="_blank"><img alt="in" border="0" class="em_img22" height="34" src="https://www.atfx.com/edm/images/01162019/linkedin_image.png" style="display: block; max-width: 34px; font-family: Arial, sans-serif; font-size: 14px; line-height: 30px; color: #ffffff;" width="34" /></a></td>
+                                                                                                                            <td class="em_w4" style="width: 9px;" width="9">&nbsp;</td>
+                                                                                                                            <td align="center" valign="top"><a href="https://www.youtube.com/channel/UC1y6dIP5pK0GIZSc53WSYRw" style="text-decoration: none; color: #ffffff;" target="_blank"><img alt="yt" border="0" class="em_img22" height="34" src="https://www.atfx.com/edm/images/01162019/youtube_image.png" style="display: block; max-width: 34px; font-family: Arial, sans-serif; font-size: 14px; line-height: 30px; color: #ffffff;" width="34" /></a></td>
+                                                                                                                        </tr>
+                                                                                                                    </tbody>
+                                                                                                                </table>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="em_height" height="29" style="height: 29px;">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td bgcolor="#3b4148" height="1" style="height: 1px; line-height: 0px; font-size: 0px;"><img alt="" border="0" height="1" src="https://www.atfx.com/edm/images/01162019/spacer.gif" style="display: block;" width="1" /></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="em_height" height="25" style="height: 25px;">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="left" class="em_grey" style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; color: #CBCCCE; line-height: 18px;" valign="top">
+                                                                              Legal: AT Global Markets Intl Ltd, Company Number 157819 is licensed by the Financial Services Commission as an Investment Dealer (Full Service Dealer, excluding Underwriting, License Number C118023331) pursuant to Section 29 of the Securities Act 2005. The Registered Address: Suite 207, 2nd Floor, The Catalyst, Silicon Avenue, 40 Cybercity, 72201 Ebène, Republic of Mauritius.
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td height="14" style="height: 14px; line-height: 0px; font-size: 0px;">&nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="left" class="em_grey" style="font-family: Helvetica, Arial, sans-serif; font-size: 11px; color: #CBCCCE; line-height: 18px;" valign="top">
+                                                                              CFDs and Margin FX are leveraged products that carry a high level of risk to your capital. Trading is not suitable for everyone; losses can exceed deposits. You should only trade with money you can afford to lose.
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="em_height1" height="25" style="height: 25px;">&nbsp;</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                            <td class="em_hide" style="width: 39px;" width="39">&nbsp;</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- Footer Section Start Here -->
+                                        <tr>
+                                            <td bgcolor="#e5e5e5" height="1" style="line-height:0px; font-size:0px;"><img alt=" " border="0" height="1" src="https://www.atfx.com/edm/images/01162019/spacer.gif" style="display:block;" width="1" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="em_hide" style="line-height:1px;min-width:598px;background-color:#e5e5e5;"><img alt="" border="0" height="1" src="https://www.atfx.com/edm/images/01162019/spacer.gif" style="max-height:1px; min-height:1px; display:block; min-width:598px;" width="598" /></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td bgcolor="#e5e5e5" style="width:1px;" width="1"><img alt=" " border="0" height="1" src="https://www.atfx.com/edm/images/01162019/spacer.gif" style="display:block;" width="1"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+         <tr>
+              <td align="center" valign="top">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" class="em_main_table" style="width:600px;" width="600">
+                  <tr>
+                    <td style="font-family: Helvetica, Arial, sans-serif; font-size:11px; line-height: 21px; text-align: center;" bgcolor="#f5f5f5">
+                       <p>To be removed from our mailing list, please click <a href="https://email-preference.atfx.com/preferences?email=%%Email%%" target="_blank">here</a></p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+    </tbody>
+</table>
+ <custom name="opencounter" type="tracking"/>
+  </body>
+</html>
